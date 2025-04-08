@@ -9,17 +9,17 @@ import TerritoryMap from "./components/TerritoryMap";
 const AboutPage = () => {
     return (
         <>
+        <NavBar />
         <main className="h-full w-full bg-white">
-            <NavBar />
+            
             <SectionHeader />
             <MissionValues />
             <EssexTeam />
             <TerritoryMap />
-
-            <Footer />
         
 
         </main>
+        <Footer />
         </>
     )
 };

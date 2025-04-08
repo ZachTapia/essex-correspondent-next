@@ -13,7 +13,7 @@ const EssexDifference = () => {
         </section>
 
         <section className=" grid h-full w-full grid-cols-1 bg-white p-2 text-black md:grid-cols-3 max-w-screen-lg mx-auto">
-        <div className="m-4 p-6">
+        <div className="m-4 p-4">
             <h1 className="mb-2 text-2xl font-light text-blue-950">
               <span className="text-4xl">01</span> Transparency
             </h1>
@@ -29,7 +29,7 @@ const EssexDifference = () => {
         />
           </div>
 
-          <div className="m-4 p-6">
+          <div className="m-4 p-4">
             <h1 className="mb-2 text-2xl font-light text-blue-950">
               <span className="text-4xl">02</span> Consistency
             </h1>
@@ -45,7 +45,7 @@ const EssexDifference = () => {
         />
           </div>
 
-          <div className="m-4 p-6">
+          <div className="m-4 p-4">
             <h1 className="mb-2 text-2xl font-light text-blue-950">
               <span className="text-4xl">03</span> Efficiency
             </h1>

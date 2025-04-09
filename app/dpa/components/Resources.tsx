@@ -1,7 +1,10 @@
 import Image from "next/image";
-import image1 from "../../../public/products-programs/dpa.svg";
-import image2 from "../../../public/products-programs/link-loan.svg";
-import image3 from "../../../public/products-programs/trio.svg";
+import image1 from "../../../public/dpa/AMORTIZED-AllStates.svg";
+import image2 from "../../../public/dpa/AMORTIZED-Washington.svg";
+import image3 from "../../../public/dpa/FORGIVEABLE-AllStates.svg";
+import image4 from "../../../public/dpa/fillable.svg";
+import image5 from "../../../public/dpa/FAQ.svg";
+import image6 from "../../../public/dpa/options.svg";
 
 const Resources = () => {
     return (
@@ -15,79 +18,79 @@ const Resources = () => {
 
         <section className="grid h-full w-full grid-cols-1 p-2 justify-items-center text-black md:grid-cols-2 max-w-screen-lg mx-auto">
           <div className="m-2 p-2 gap-4">
-            <a href="" target="_blank">
+            <a href="https://essexcorrespondent.com/resources_amortized_all_states.pdf" target="_blank">
               <Image
                 src={image1}
                 width={800}
                 height={100}
-                alt="Down Payment Assistance"
+                alt="Amortized All States document link"
                 className="pt-4"
               />
             </a>
           </div>
 
           <div className="m-2 p-2 gap-4">
-            <a href="" target="_blank">
+            <a href="https://essexcorrespondent.com/resources_amortized_washington_state.pdf" target="_blank">
               <Image
                 src={image2}
                 width={800}
                 height={100}
-                alt="Essex Link Loan"
+                alt="Amortized Washington State document link"
                 className="pt-4"
               />
             </a>
           </div>
 
           <div className="m-2 p-2 gap-4">
-            <a href="" target="_blank">
+            <a href="https://essexcorrespondent.com/resources_forgivable_all_states.pdf" target="_blank">
               <Image
                 src={image3}
                 width={800}
                 height={100}
-                alt="TRIO Program (TBA)"
+                alt="Forgivable All States except NY & WA document link"
                 className="pt-4"
               />
             </a>
           </div>
 
           <div className="m-2 p-2 gap-4">
-            <a href="" target="_blank">
+            <a href="https://essexcorrespondent.com/resources_down_payment_fillable.pdf" target="_blank">
               <Image
-                src={image3}
+                src={image4}
                 width={800}
                 height={100}
-                alt="TRIO Program (TBA)"
+                alt="Nationwide Down Payment Options (Fillable) document pdf"
                 className="pt-4"
               />
             </a>
           </div>
 
           <div className="m-2 p-2 gap-4">
-            <a href="" target="_blank">
+            <a href="https://essexcorrespondent.com/resources_dpa_faq.pdf" target="_blank">
               <Image
-                src={image3}
+                src={image5}
                 width={800}
                 height={100}
-                alt="TRIO Program (TBA)"
+                alt="DPA FAQ document link"
                 className="pt-4"
               />
             </a>
           </div>
 
           <div className="m-2 p-2 gap-4">
-            <a href="" target="_blank">
+            <a href="https://essexcorrespondent.com/resources_down_payment.pdf" target="_blank">
               <Image
-                src={image3}
+                src={image6}
                 width={800}
                 height={100}
-                alt="TRIO Program (TBA)"
+                alt="Nationwide Down Payment Options document link"
                 className="pt-4"
               />
             </a>
           </div>
 
           <div className="m-2 p-2 gap-4">
-            <p className="text-blue-950">
+            <p className="text-blue-950 pb-4">
             * PDF must be downloaded to add custom logo.
             </p>
             <p className="text-gray-700">

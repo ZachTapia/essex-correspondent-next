@@ -35,7 +35,7 @@ const EssexWay = () => {
             </p>
           </div>
 
-          <div className="m-4 p-2">
+          <div className="m-4 p-2 max-sm:pt-0">
           <Image
           src={image2}
           width={500}
@@ -51,7 +51,7 @@ const EssexWay = () => {
             </p>
           </div>
 
-          <div className="m-4 p-2">
+          <div className="m-4 p-2 max-sm:pt-0">
           <Image
           src={image3}
           width={500}
@@ -67,7 +67,7 @@ const EssexWay = () => {
             </p>
           </div>
 
-          <div className="m-4 p-2">
+          <div className="m-4 p-2 max-sm:pt-0">
           <Image
           src={image4}
           width={500}

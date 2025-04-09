@@ -6,7 +6,7 @@ import image3 from "../../../public/resources/gnma.svg";
 const ResourceDocs = () => {
     return (
 <>
-        <section className="w-full h-full bg-white mx-auto max-w-screen-lg flex flex-col p-4 pt-18 max-sm:pt-10">
+        <section className="w-full h-full bg-white mx-auto max-w-screen-lg flex flex-col p-4 pt-10 max-sm:pt-10">
         <h1 className="text-blue-950 text-center text-4xl font-light ">
           Resources
         </h1>

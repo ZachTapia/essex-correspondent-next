@@ -4,14 +4,15 @@ import image1 from "../../../public/resources/interest-rate.svg";
 const ThingsToKnow = () => {
   return (
     <>
-      <section className="w-full h-full bg-white mx-auto max-w-screen-lg flex flex-col p-4">
+    <section className=" bg-gray-200">
+      <section className="w-full h-full bg-gray-200 mx-auto max-w-screen-lg flex flex-col p-4">
         <h1 className="text-blue-950 text-center text-4xl font-light ">
           Things To Know
         </h1>
         <hr className="w-40 h-1.5 mx-auto bg-gray-100 border-0 my-4 dark:bg-blue-950"></hr>
       </section>
 
-      <section className=" grid h-full w-full grid-cols-1 bg-white text-black md:grid-cols-2 max-w-screen-lg mx-auto">
+      <section className=" grid h-full w-full grid-cols-1 bg-gray-200 text-black md:grid-cols-2 max-w-screen-lg mx-auto">
         <div>
           <Image
             src={image1}
@@ -50,6 +51,8 @@ const ThingsToKnow = () => {
           </ul>
         </div>
       </section>
+      </section>
+      <section className="w-full bg-gray-200 h-[60px] sm:h-[70px] md:h-[90px] [clip-path:polygon(0_0,100%_0,50%_100%)]"></section>
     </>
   );
 };

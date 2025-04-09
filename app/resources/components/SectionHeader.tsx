@@ -3,7 +3,7 @@ import image1 from "../../../public/resources/resources.svg";
 
 const SectionHeader = () => {
   return (
-    <section className="h-full w-full bg-white">
+    <section className="h-full w-full bg-gray-200">
 
         <div>
           <Image

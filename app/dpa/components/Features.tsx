@@ -15,7 +15,7 @@ const Features = () => {
             className="pl-6 pr-6 pt-6"
           />
         </div>
-        <div className="pl-6 pr-6 pt-10">
+        <div className="pl-6 pr-6 pt-10 max-sm:pt-4">
           <h1 className="font-semibold text-lg text-blue-950">
             Some Features Are:
           </h1>

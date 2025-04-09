@@ -16,7 +16,7 @@ const ProductsPrograms = () => {
 
         <section className="grid h-full w-full grid-cols-1 p-2 justify-items-center text-black md:grid-cols-2 max-w-screen-lg mx-auto">
           <div className="m-2 p-2 gap-4">
-            <a href="" target="_blank">
+            <a href="/dpa" target="_blank">
               <Image
                 src={image1}
                 width={800}
@@ -28,7 +28,7 @@ const ProductsPrograms = () => {
           </div>
 
           <div className="m-2 p-2 gap-4">
-            <a href="" target="_blank">
+            <a href="/link-loan" target="_blank">
               <Image
                 src={image2}
                 width={800}

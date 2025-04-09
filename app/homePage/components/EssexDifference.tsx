@@ -29,7 +29,7 @@ const EssexDifference = () => {
         />
           </div>
 
-          <div className="m-4 p-4">
+          <div className="m-4 p-4 max-sm:pt-0">
             <h1 className="mb-2 text-2xl font-light text-blue-950">
               <span className="text-4xl">02</span> Consistency
             </h1>
@@ -45,7 +45,7 @@ const EssexDifference = () => {
         />
           </div>
 
-          <div className="m-4 p-4">
+          <div className="m-4 p-4 max-sm:pt-0">
             <h1 className="mb-2 text-2xl font-light text-blue-950">
               <span className="text-4xl">03</span> Efficiency
             </h1>

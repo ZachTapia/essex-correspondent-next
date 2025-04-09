@@ -85,6 +85,15 @@ const Resources = () => {
               />
             </a>
           </div>
+
+          <div className="m-2 p-2 gap-4">
+            <p className="text-blue-950">
+            * PDF must be downloaded to add custom logo.
+            </p>
+            <p className="text-gray-700">
+            This is meant for business to business communication only and is subject to review and approval by the Correspondent's Compliance Department.
+            </p>
+          </div>
       </section>
       </>
     )

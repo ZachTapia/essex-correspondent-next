@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import image1 from "../../public/shared/Essex_CorrespondentLending.png";
+import image1 from "../../public/shared/CorrLogo.svg";
 import { useState } from "react";
 
 export default function NavBar() {
@@ -24,9 +24,9 @@ export default function NavBar() {
           <a href="/">
             <Image
               src={image1}
-              width={200}
+              width={250}
               height={100}
-              alt="Couple moving into a home"
+              alt="Essex Correspondent Logo"
               className="mr-4 block cursor-pointer"
             />
           </a>

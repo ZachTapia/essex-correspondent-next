@@ -1,4 +1,14 @@
-const GetInTouch = () => {
+"use client";
+import { useForm } from 'react-hook-form';
+
+function GetInTouch() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+
   return (
     <>
       <section className="bg-gray-200 pb-4">
@@ -10,11 +20,11 @@ const GetInTouch = () => {
         </section>
 
         <section className="mx-auto h-full w-full bg-gray-200 px-4 pb-6 text-black md:flex-row">
-          <form className="mx-auto grid max-w-screen-lg grid-cols-2 gap-2 bg-gray-200 p-4">
+          <form onSubmit={handleSubmit((data) => console.log(data))} className="mx-auto grid max-w-screen-lg grid-cols-2 gap-2 bg-gray-200 p-4">
             <div className="col-span-1">
               <label className="block p-4">
                 First Name: <span className="required text-red-600">*</span>
-                <input
+                <input {...register('firstName', { required: true })}
                   type="text"
                   name="firstName"
                   className="mt-1 block w-full border border-white bg-white px-3 py-2"
@@ -23,8 +33,18 @@ const GetInTouch = () => {
             </div>
             <div className="col-span-1">
               <label className="block p-4">
+                Last Name: <span className="required text-red-600">*</span>
+                <input {...register('lastName', { required: true })}
+                  type="text"
+                  name="lastName"
+                  className="mt-1 block w-full border border-white bg-white px-3 py-2"
+                />
+              </label>
+            </div>
+            <div className="col-span-1">
+              <label className="block p-4">
                 Email: <span className="required text-red-600">*</span>
-                <input
+                <input {...register('email', { required: true })}
                   type="email"
                   name="email"
                   className="mt-1 block w-full border border-white bg-white px-3 py-2"
@@ -34,7 +54,7 @@ const GetInTouch = () => {
             <div className="col-span-1">
               <label className="block p-4">
                 Phone:{" "}
-                <input
+                <input {...register('phoneNumber')}
                   name="phoneNumber"
                   className="mt-1 block w-full border border-white bg-white px-3 py-2"
                 />
@@ -43,7 +63,7 @@ const GetInTouch = () => {
             <div className="col-span-2">
               <label className="block p-4">
                 Message: <span className="required text-red-600">*</span>
-                <textarea
+                <textarea {...register('message')}
                   name="message"
                   placeholder="Feel free to include any questions, requests, or details you would like to communicate."
                   className="mt-1 block w-full border border-white bg-white px-3 py-2"

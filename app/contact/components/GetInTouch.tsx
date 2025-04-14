@@ -1,12 +1,19 @@
 "use client";
-import { useForm } from 'react-hook-form';
 
-function GetInTouch() {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
+import { useForm, SubmitHandler, SubmitErrorHandler } from "react-hook-form"
+
+type FormValues = {
+  firstName: string
+  lastName: string
+  email: string
+  phoneNumber: number;
+  message: string;
+}
+
+export default function GetInTouch() {
+  const { register, handleSubmit, reset } = useForm<FormValues>()
+  const onSubmit: SubmitHandler<FormValues> = (data) => console.log(data); reset();
+  const onError: SubmitErrorHandler<FormValues> = (errors) => console.log(errors)
 
 
   return (
@@ -20,7 +27,7 @@ function GetInTouch() {
         </section>
 
         <section className="mx-auto h-full w-full bg-gray-200 px-4 pb-6 text-black md:flex-row">
-          <form onSubmit={handleSubmit((data) => console.log(data))} className="mx-auto grid max-w-screen-lg grid-cols-2 gap-2 bg-gray-200 p-4">
+          <form onSubmit={handleSubmit(onSubmit, onError)} className="mx-auto grid max-w-screen-lg grid-cols-2 gap-2 bg-gray-200 p-4">
             <div className="col-span-1">
               <label className="block p-4">
                 First Name: <span className="required text-red-600">*</span>
@@ -85,4 +92,4 @@ function GetInTouch() {
   );
 };
 
-export default GetInTouch;
+// export default GetInTouch;

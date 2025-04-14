@@ -7,11 +7,13 @@ const ProductsPrograms = () => {
         <section className="h-full w-full bg-white pt-24 mx-auto max-sm:pt-8">
 
         <div>
+        <a href="/resources" target="_blank">
           <Image
           src={image1}
           alt="Essex products and programs"
           width={2000}
            />
+           </a>
           </div>
 
     </section>

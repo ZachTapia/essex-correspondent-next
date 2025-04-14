@@ -4,7 +4,7 @@ import image1 from "../../../public/contact/lending.svg";
 const LendingRedefined = () => {
     return (
 
-        <section className="h-full w-full bg-white pt-2 mx-auto">
+        <section className="h-full w-full bg-white mx-auto">
 
         <div>
         <a href="/products" target="_blank">

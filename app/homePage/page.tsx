@@ -1,7 +1,6 @@
 import EssexDifference from "./components/EssexDifference";
 import ProductsPrograms from "./components/ProductsPrograms";
 import SectionHeader from "./components/SectionHeader";
-import Testimonials from "./components/Testimonials";
 import WhyEssex from "./components/WhyEssex";
 
 const HomePage = () => {
@@ -12,7 +11,6 @@ const HomePage = () => {
         <EssexDifference />
         <WhyEssex />
         <ProductsPrograms />
-        <Testimonials />
         </main>
         </>
     )

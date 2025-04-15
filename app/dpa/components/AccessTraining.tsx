@@ -1,0 +1,129 @@
+"use client"
+
+import Image from "next/image";
+import image1 from "../../../public/dpa/webinarVideo.svg";
+
+import { useState } from "react";
+import { useEffect } from "react";
+
+
+const DpaForm = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    useEffect(() => {
+        if (isModalOpen) {
+          document.body.classList.add("overflow-hidden");
+        } else {
+          document.body.classList.remove("overflow-hidden");
+        }
+    
+        return () => {
+          document.body.classList.remove("overflow-hidden");
+        };
+      }, [isModalOpen]);
+  
+    return (
+      <section className="w-full h-full justify-items-center bg-white mx-auto max-w-screen-lg p-4 max-sm:pt-0">
+        <div className="m-2 p-2 gap-4">
+        <button onClick={() => setIsModalOpen(true)} type="button" className="cursor-pointer">
+          <Image
+            src={image1}
+            width={800}
+            height={100}
+            alt="Essex Mortgage DPA Webinar"
+            className="pt-4"
+          />
+        </button>
+        </div>
+        <p className="text-gray-600 text-center text-lg pb-2">
+          2025 NATIONAL DPA PROGRAM WEBINAR
+        </p>
+        
+        {isModalOpen && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center">
+            <div className="bg-gray-600 p-12 rounded-lg shadow-md w-full max-w-lg relative">
+              {/* the Close Button */}
+              <button
+                onClick={() => setIsModalOpen(false)}
+                className="absolute top-2 right-2 text-gray-200 hover:text-gray-400 cursor-pointer"
+              >
+                &times;
+              </button>
+  
+              {/* fill out info */}
+              <h3 className="text-xl font-semibold mb-4 text-white ">
+                Get Access to our DPA Training Video
+              </h3>
+              <form className="space-y-4">
+              <div>
+                  <label
+                    htmlFor="companyName"
+                    className="block mb-1 text-sm text-white"
+                  >
+                    Company Name <span className="text-red-600">*</span>
+                  </label>
+                  <input
+                    type="companyName"
+                    id="companyName"
+                    className="w-full px-3 py-2 border rounded-lg text-sm"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    htmlFor="nmls"
+                    className="block mb-1 text-sm text-white"
+                  >
+                    Company NMLS <span className="text-red-600">*</span>
+                  </label>
+                  <input
+                    type="nmls"
+                    id="nmls"
+                    className="w-full px-3 py-2 border rounded-lg text-sm"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    htmlFor="name"
+                    className="block mb-1 text-sm text-white"
+                  >
+                    First & Last Name <span className="text-red-600">*</span>
+                  </label>
+                  <input
+                    type="name"
+                    id="name"
+                    className="w-full px-3 py-2 border rounded-lg text-sm"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    htmlFor="email"
+                    className="block mb-1 text-sm text-white"
+                  >
+                    Your Email <span className="text-red-600">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    className="w-full px-3 py-2 border rounded-lg text-sm"
+                    placeholder="name@company.com"
+                    required
+                  />
+                </div>
+                <button
+                  type="submit"
+                  className="w-full bg-blue-950 text-white py-2 px-4 rounded hover:bg-blue-900 cursor-pointer"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        )}
+      </section>
+    );
+  };
+  
+  export default DpaForm;

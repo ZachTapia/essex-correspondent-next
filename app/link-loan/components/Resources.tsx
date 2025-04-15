@@ -1,5 +1,6 @@
 import Image from "next/image";
 import image1 from "../../../public/link-loan/link-matrix.svg";
+import image2 from "../../../public/link-loan/ll-website.svg";
 
 const Resources = () => {
     return (
@@ -19,6 +20,17 @@ const Resources = () => {
                 width={800}
                 height={100}
                 alt="Link Loan Program Overview document link"
+                className="pt-4"
+              />
+            </a>
+          </div>
+          <div className="m-2 p-2 gap-4">
+            <a href="https://www.mylinkloan.com/" target="_blank">
+              <Image
+                src={image2}
+                width={800}
+                height={100}
+                alt="Link Loan Website"
                 className="pt-4"
               />
             </a>

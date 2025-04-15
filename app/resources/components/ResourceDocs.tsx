@@ -1,7 +1,6 @@
 import Image from "next/image";
-import image1 from "../../../public/resources/required-docs.svg";
-import image2 from "../../../public/resources/dp-options.svg";
-import image3 from "../../../public/resources/gnma.svg";
+import image1 from "../../../public/resources/becoming-approved.svg";
+import image2 from "../../../public/resources/NDP-options.svg";
 
 const ResourceDocs = () => {
     return (
@@ -20,7 +19,7 @@ const ResourceDocs = () => {
               src={image1}
               width={800}
               height={100}
-              alt="Required Documents"
+              alt="Becoming Approved Documents"
               className="pt-4"
             />
             </a>
@@ -38,7 +37,7 @@ const ResourceDocs = () => {
             </a>
           </div>
 
-          <div className="m-2 p-2 gap-4">
+          {/* <div className="m-2 p-2 gap-4">
           <a href="" target="_blank">
             <Image
               src={image3}
@@ -48,7 +47,7 @@ const ResourceDocs = () => {
               className="pt-4"
             />
             </a>
-          </div>
+          </div> */}
 
           <div className="m-2 p-2 gap-4 text-gray-400">
             <h1>

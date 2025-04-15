@@ -1,5 +1,5 @@
 import Image from "next/image";
-import image1 from "../../../public/resources/resources.svg";
+import image1 from "../../../public/resources/Rheader.svg";
 
 const SectionHeader = () => {
   return (

@@ -1,7 +1,6 @@
 import Image from "next/image";
 import image1 from "../../../public/products-programs/dpa.svg";
-import image2 from "../../../public/products-programs/link-loan.svg";
-import image3 from "../../../public/products-programs/trio.svg";
+import image2 from "../../../public/products-programs/govt-ent.svg";
 
 const ProductsPrograms = () => {
   return (
@@ -39,7 +38,7 @@ const ProductsPrograms = () => {
             </a>
           </div>
 
-          <div className="m-2 p-2 gap-4">
+          {/* <div className="m-2 p-2 gap-4">
             <a href="" target="_blank">
               <Image
                 src={image3}
@@ -49,7 +48,7 @@ const ProductsPrograms = () => {
                 className="pt-4"
               />
             </a>
-          </div>
+          </div> */}
         </section>
       </section>
       <section className="w-full bg-gray-200 h-[60px] sm:h-[70px] md:h-[90px] [clip-path:polygon(0_0,100%_0,50%_100%)]"></section>

@@ -14,10 +14,10 @@ const MissionValues = () => {
         <section className=" grid h-full w-full grid-cols-1 bg-white p-2 text-black md:grid-cols-3 max-w-screen-lg mx-auto">
         <div className="m-4 p-4">
             <h1 className="mb-2 text-2xl font-light text-blue-950">
-              <span className="text-4xl">01</span> Transparency
+              <span className="text-4xl">01</span> Trusted Partnerships
             </h1>
             <p className="font-light">
-            Our process and pricing is fully exposed to our Client partners, there are no hidden fees or other "gotchas" when doing business with us.
+            With delegated underwriting in place, we trust your process and team&apos;s decisions. Our role is to support—not second-guess—your underwriters.
             </p>
             <Image
           src={image1}

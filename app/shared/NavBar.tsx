@@ -118,7 +118,7 @@ export default function NavBar() {
                       href="/link-loan"
                       className="block text-center hover:text-gray-600"
                     >
-                      Link Loan
+                      Trio Link Loan
                     </Link>
                   </li>
                 </ul>
@@ -176,7 +176,7 @@ export default function NavBar() {
                           href="/link-loan"
                           className="block text-center px-4 py-2 hover:bg-gray-100"
                         >
-                          Link Loan
+                          Trio Link Loan
                         </Link>
                       </li>
                     </ul>

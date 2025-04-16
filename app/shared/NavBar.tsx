@@ -21,7 +21,7 @@ export default function NavBar() {
     <div>
       <nav className="block w-full max-w-screen px-4 py-4 mx-auto bg-white bg-opacity-90 top-3 shadow lg:px-8">
         <div className="container flex flex-wrap items-center justify-between mx-auto ">
-          <a href="/">
+          <Link href="/">
             <Image
               src={image1}
               width={250}
@@ -29,7 +29,7 @@ export default function NavBar() {
               alt="Essex Correspondent Logo"
               className="mr-4 block cursor-pointer"
             />
-          </a>
+          </Link>
 
           <div className="lg:hidden">
             <button
@@ -62,7 +62,7 @@ export default function NavBar() {
             } lg:hidden z-50`}
           >
             <div className="flex flex-row items-center border-b pb-4">
-              <a href="/">
+              <Link href="/">
                 <Image
                   src={image1}
                   width={200}
@@ -70,7 +70,7 @@ export default function NavBar() {
                   alt="Couple moving into a home"
                   className="mr-4 block cursor-pointer"
                 />
-              </a>
+              </Link>
               <button
                 onClick={toggleMobileMenu}
                 className="absolute top-4 right-4 text-black hover:text-gray-600"
@@ -131,11 +131,11 @@ export default function NavBar() {
               </li>
 
               <li className="mt-4">
-                <a href="https://essex.lauramac.io/#/" target="_blank">
+                <Link href="https://essex.lauramac.io/#/" target="_blank">
                   <button className="bg-blue-950 text-white px-8 py-2 font-medium rounded-md hover:bg-gray-600">
                     CLIENT LOGIN
                   </button>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -191,11 +191,11 @@ export default function NavBar() {
               </li>
 
               <li>
-                <a href="https://essex.lauramac.io/#/" target="_blank">
+                <Link href="https://essex.lauramac.io/#/" target="_blank">
                   <button className="bg-blue-950 hover:bg-gray-600 font-medium text-white px-8 py-2 cursor-pointer">
                     CLIENT LOGIN
                   </button>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

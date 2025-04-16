@@ -39,11 +39,11 @@ const ProductDetails = () => {
             <p className="pb-4 text-black">
               Today when a potential borrower comes to your loan officer and you
               determine that they are not qualified for any of the financing
-              options you offer, you would typically give them a "To Do" list of
-              things they must improve on to qualify for a home loan. While this
-              may result in a transaction 6 months to several years down the
-              road, often they either never qualify, or they end up closing
-              elsewhere down the road.
+              options you offer, you would typically give them a &quot;To
+              Do&quot; list of things they must improve on to qualify for a home
+              loan. While this may result in a transaction 6 months to several
+              years down the road, often they either never qualify, or they end
+              up closing elsewhere down the road.
             </p>
             <p className="pb-4 text-black">
               Trio&apos;s product allows qualified consumers to identify a home
@@ -72,7 +72,7 @@ const ProductDetails = () => {
               Compare Ratio.
             </p>
             <h1 className="text-xl font-semibold text-blue-950">
-              Want to Learn More About Trio's Link Loan Program?
+              Want to Learn More About Trio&apos;s Link Loan Program?
             </h1>
             <p className="pb-4 text-black">
               Our team is here to help. Connect with one of our experienced

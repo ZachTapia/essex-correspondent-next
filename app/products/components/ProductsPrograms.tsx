@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import image1 from "../../../public/products-programs/dpa.svg";
 import image2 from "../../../public/products-programs/govt-ent.svg";
@@ -15,7 +16,7 @@ const ProductsPrograms = () => {
 
         <section className="grid h-full w-full grid-cols-1 p-2 justify-items-center text-black md:grid-cols-2 max-w-screen-lg mx-auto">
           <div className="m-2 p-2 gap-4">
-            <a href="/dpa" target="_blank">
+            <Link href="/dpa" target="_blank">
               <Image
                 src={image1}
                 width={800}
@@ -23,7 +24,7 @@ const ProductsPrograms = () => {
                 alt="Down Payment Assistance"
                 className="pt-4"
               />
-            </a>
+            </Link>
           </div>
 
           <div className="m-2 p-2 gap-4">
@@ -55,7 +56,7 @@ const ProductsPrograms = () => {
 
       <section className="w-full h-full bg-white mx-auto flex flex-col p-4 pt-10 max-sm:pt-10">
         <h1 className="text-blue-950 text-center text-2xl font-light pb-4 ">
-          There's the Old Way, and the Essex Way. Welcome to the Essex Way.
+          There&apos;s the Old Way, and the Essex Way. Welcome to the Essex Way.
         </h1>
       </section>
     </>

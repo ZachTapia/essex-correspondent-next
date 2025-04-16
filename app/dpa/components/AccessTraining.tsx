@@ -3,8 +3,7 @@
 import Image from "next/image";
 import image1 from "../../../public/dpa/webinarVideo.svg";
 
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 
 
 const DpaForm = () => {

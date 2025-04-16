@@ -41,7 +41,7 @@ const DpaForm = () => {
         
         {isModalOpen && (
           <div className="fixed inset-0 z-50 flex items-center justify-center">
-            <div className="bg-gray-600 p-12 rounded-lg shadow-md w-full max-w-lg relative">
+            <div className="bg-gray-300 p-12 rounded-lg shadow-md w-full max-w-lg relative">
               {/* the Close Button */}
               <button
                 onClick={() => setIsModalOpen(false)}
@@ -51,7 +51,7 @@ const DpaForm = () => {
               </button>
   
               {/* fill out info */}
-              <h3 className="text-xl font-semibold mb-4 text-white ">
+              <h3 className="text-xl font-semibold mb-4 text-blue-950 ">
                 Get Access to our DPA Training Video
               </h3>
               <form className="space-y-4">
@@ -65,7 +65,7 @@ const DpaForm = () => {
                   <input
                     type="companyName"
                     id="companyName"
-                    className="w-full px-3 py-2 border rounded-lg text-sm"
+                    className="w-full px-3 py-2 border border-gray-400 rounded-lg text-sm"
                     required
                   />
                 </div>
@@ -74,13 +74,12 @@ const DpaForm = () => {
                     htmlFor="nmls"
                     className="block mb-1 text-sm text-white"
                   >
-                    Company NMLS <span className="text-red-600">*</span>
+                    Company NMLS
                   </label>
                   <input
                     type="nmls"
                     id="nmls"
-                    className="w-full px-3 py-2 border rounded-lg text-sm"
-                    required
+                    className="w-full px-3 py-2 border border-gray-400 rounded-lg text-sm"
                   />
                 </div>
                 <div>
@@ -93,7 +92,7 @@ const DpaForm = () => {
                   <input
                     type="name"
                     id="name"
-                    className="w-full px-3 py-2 border rounded-lg text-sm"
+                    className="w-full px-3 py-2 border border-gray-400 rounded-lg text-sm"
                     required
                   />
                 </div>
@@ -107,8 +106,7 @@ const DpaForm = () => {
                   <input
                     type="email"
                     id="email"
-                    className="w-full px-3 py-2 border rounded-lg text-sm"
-                    placeholder="name@company.com"
+                    className="w-full px-3 py-2 border border-gray-400 rounded-lg text-sm"
                     required
                   />
                 </div>

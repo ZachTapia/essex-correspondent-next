@@ -1,5 +1,5 @@
 import Image from "next/image";
-import image1 from "../../../public/resources/interest-rate.svg";
+import image1 from "../../../public/resources/things-to-know.svg";
 
 const ThingsToKnow = () => {
   return (
@@ -16,10 +16,10 @@ const ThingsToKnow = () => {
         <div>
           <Image
             src={image1}
-            width={500}
+            width={470}
             height={100}
             alt="mortgage interest rates"
-            className="pl-6 pr-6 pt-6"
+            className="pl-6 pr-6 pt-6 p-2"
           />
         </div>
         <div className="pl-6 pr-6 pt-10">

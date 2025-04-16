@@ -35,14 +35,14 @@ const Features = () => {
             <li className="font-extralight text-lg flex items-center gap-2">
               - No DTI limitations with a DU or LP approval
             </li>
-            <li className="font-extralight text-lg flex items-center gap-2">
+            <li className="font-extralight text-lg flex items-center ">
               - We have full delegated authority to fund your loan - no third party delays
             </li>
           </ul>
         </div>
       </section>
       </section>
-      <section className="w-full bg-gray-200 h-[60px] sm:h-[70px] md:h-[90px] [clip-path:polygon(0_0,100%_0,50%_100%)] "></section>
+      <section className="w-full bg-gray-200 h-[60px] sm:h-[70px] md:h-[90px] [clip-path:polygon(0_0,100%_0,50%_100%)]"></section>
     </>
   );
 };

@@ -30,10 +30,10 @@ const EssexTeam = () => {
         </section>
 
         <section className="grid h-full w-full grid-cols-1 p-2 text-black md:grid-cols-2 max-w-screen-lg mx-auto">
-          <div className="m-2 p-2 flex max-sm:flex-col max-sm:items-center items-start gap-4">
+          <div className="m-2 flex max-sm:flex-col max-sm:items-center items-start gap-4">
             <Image
               src={image1}
-              width={300}
+              width={250}
               height={100}
               alt="Image of Roland"
               className="pt-4"
@@ -52,10 +52,10 @@ const EssexTeam = () => {
             </div>
           </div>
 
-          <div className="m-2 p-2 flex max-sm:flex-col max-sm:items-center items-start gap-4">
+          <div className="m-2 flex max-sm:flex-col max-sm:items-center items-start gap-4">
             <Image
               src={image2}
-              width={300}
+              width={250}
               height={100}
               alt="Image of Diane"
               className="pt-4"

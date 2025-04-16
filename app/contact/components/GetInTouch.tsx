@@ -1,20 +1,51 @@
 "use client";
 
-import { useForm, SubmitHandler, SubmitErrorHandler } from "react-hook-form"
+import { useState } from "react";
+import { submitContactUs } from "@/app/actions/SubmitContactUs";
+import { useForm, SubmitHandler, SubmitErrorHandler } from "react-hook-form";
 
 type FormValues = {
-  firstName: string
-  lastName: string
-  email: string
-  phoneNumber: number;
+  firstName: string;
+  lastName: string;
+  email: string;
+  phoneNumber: string;
   message: string;
-}
+};
 
 export default function GetInTouch() {
-  const { register, handleSubmit, reset } = useForm<FormValues>()
-  const onSubmit: SubmitHandler<FormValues> = (data) => console.log(data); reset();
-  const onError: SubmitErrorHandler<FormValues> = (errors) => console.log(errors)
+  const [submissionStatus, setSubmissionStatus] = useState<
+    "success" | "error" | null
+  >(null);
 
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { isSubmitting, isSubmitSuccessful, errors },
+  } = useForm<FormValues>();
+
+  const onSubmit: SubmitHandler<FormValues> = async (data) => {
+    const result = await submitContactUs(
+      data.firstName,
+      data.lastName,
+      data.email,
+      data.phoneNumber,
+      data.message
+    );
+    console.log(result);
+
+    if (result.success === true) {
+      setSubmissionStatus("success");
+    } else {
+      setSubmissionStatus("error");
+    }
+
+    reset();
+  };
+
+  const onError: SubmitErrorHandler<FormValues> = (errors) => {
+    console.log(errors);
+  };
 
   return (
     <>
@@ -27,21 +58,29 @@ export default function GetInTouch() {
         </section>
 
         <section className="mx-auto h-full w-full bg-gray-200 px-4 pb-6 text-black md:flex-row">
-          <form onSubmit={handleSubmit(onSubmit, onError)} className="mx-auto grid max-w-screen-lg grid-cols-2 gap-2 bg-gray-200 p-4">
+          <form
+            onSubmit={handleSubmit(onSubmit, onError)}
+            className="mx-auto grid max-w-screen-lg grid-cols-2 gap-2 bg-gray-200 p-4"
+          >
             <div className="col-span-1">
               <label className="block p-4">
                 First Name: <span className="required text-red-600">*</span>
-                <input {...register('firstName', { required: true })}
+                <input
+                  {...register("firstName", { required: true })}
                   type="text"
                   name="firstName"
                   className="mt-1 block w-full border border-white bg-white px-3 py-2"
                 />
               </label>
+              {errors.firstName && (
+                <p className="text-red-600">First Name is required</p>
+              )}
             </div>
             <div className="col-span-1">
               <label className="block p-4">
                 Last Name: <span className="required text-red-600">*</span>
-                <input {...register('lastName', { required: true })}
+                <input
+                  {...register("lastName", { required: true })}
                   type="text"
                   name="lastName"
                   className="mt-1 block w-full border border-white bg-white px-3 py-2"
@@ -51,7 +90,8 @@ export default function GetInTouch() {
             <div className="col-span-1">
               <label className="block p-4">
                 Email: <span className="required text-red-600">*</span>
-                <input {...register('email', { required: true })}
+                <input
+                  {...register("email", { required: true })}
                   type="email"
                   name="email"
                   className="mt-1 block w-full border border-white bg-white px-3 py-2"
@@ -61,7 +101,8 @@ export default function GetInTouch() {
             <div className="col-span-1">
               <label className="block p-4">
                 Phone:{" "}
-                <input {...register('phoneNumber')}
+                <input
+                  {...register("phoneNumber")}
                   name="phoneNumber"
                   className="mt-1 block w-full border border-white bg-white px-3 py-2"
                 />
@@ -70,7 +111,8 @@ export default function GetInTouch() {
             <div className="col-span-2">
               <label className="block p-4">
                 Message: <span className="required text-red-600">*</span>
-                <textarea {...register('message')}
+                <textarea
+                  {...register("message")}
                   name="message"
                   placeholder="Feel free to include any questions, requests, or details you would like to communicate."
                   className="mt-1 block w-full border border-white bg-white px-3 py-2"
@@ -81,13 +123,25 @@ export default function GetInTouch() {
               <button
                 type="submit"
                 className="cursor-pointer bg-blue-950 px-6 py-2 font-bold text-white hover:bg-blue-900 disabled:opacity-50"
+                disabled={isSubmitting || isSubmitSuccessful}
               >
-                SEND MESSAGE
+                {isSubmitting ? "Submitting..." : "Submit"}
               </button>
             </div>
+            {submissionStatus === "success" && (
+              <p className="text-green-600">
+                Thank you for your submission! We will get back to you as soon
+                as possible.
+              </p>
+            )}
+            {submissionStatus === "error" && (
+              <p className="text-red-600">
+                There was an error submitting the form. Please try again.
+              </p>
+            )}
           </form>
         </section>
       </section>
     </>
   );
-};
+}

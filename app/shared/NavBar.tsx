@@ -3,11 +3,13 @@ import Link from "next/link";
 import Image from "next/image";
 import image1 from "../../public/shared/CorrLogo.svg";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 export default function NavBar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+  const pathname = usePathname();
   };
 
   // Navigation items array
@@ -94,7 +96,7 @@ export default function NavBar() {
               {navItems.map((item, index) => (
                 <li
                   key={index}
-                  className="flex items-center p-1 text-lg gap-x-2 text-black hover:text-gray-600"
+                  className="flex items-center p-1 text-lg gap-x-2 text-black hover:text-gray-600 ${pathname === item.href ? text-black font-bold}"
                 >
                   <Link href={item.href} className="flex items-center">
                     {item.name}
@@ -146,7 +148,7 @@ export default function NavBar() {
               {navItems.map((item, index) => (
                 <li
                   key={index}
-                  className="flex items-center p-1 text-lg font-medium gap-x-2 text-black hover:text-gray-600"
+                  className="flex items-center p-1 text-lg font-medium gap-x-2 text-black hover:text-gray-500 ${pathname === item.href ? text-black font-bold}"
                 >
                   <Link href={item.href} className="flex items-center">
                     {item.name}

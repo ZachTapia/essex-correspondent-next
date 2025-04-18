@@ -2,11 +2,55 @@
 
 import Image from "next/image";
 import image1 from "../../../public/dpa/webinarVideo.svg";
-
 import { useState, useEffect } from "react";
+import { useForm, SubmitHandler, SubmitErrorHandler } from "react-hook-form";
+import { DpaFormAccess } from "@/app/actions/DpaFormAccess";
+
+type FormValues = {
+companyName: string;
+nmls: string;
+name: string;
+email: string;
+};
+
+// export default function AccessTraining() {
+//   const [submissionStatus, setSubmissionStatus] = useState<
+//     "success" | "error" | null
+//   >(null);
+
+//   const {
+//     register,
+//     handleSubmit,
+//     reset,
+//     formState: { isSubmitting, isSubmitSuccessful, errors },
+//   } = useForm<FormValues>();
+
+//   const onSubmit: SubmitHandler<FormValues> = async (data) => {
+//     const result = await AccessTraining(
+//       data.companyName,
+//       data.nmls,
+//       data.name,
+//       data.email,
+//     );
+//     console.log(result);
+
+//     if (result.success === true) {
+//       setSubmissionStatus("success");
+//     } else {
+//       setSubmissionStatus("error");
+//     }
+
+//     reset();
+//   };
+
+//   const onError: SubmitErrorHandler<FormValues> = (errors) => {
+//     console.log(errors);
+//   };
+// }
 
 
-const DpaForm = () => {
+
+  const DpaForm = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     useEffect(() => {

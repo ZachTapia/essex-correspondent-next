@@ -97,7 +97,7 @@ email: string;
               <h3 className="text-xl font-semibold mb-4 text-blue-950 ">
                 Get Access to our DPA Training Video
               </h3>
-              <form className="space-y-4">
+              <form onSubmit={handleSubmit(onSubmit, onError)} className="space-y-4">
               <div>
                   <label
                     htmlFor="companyName"
@@ -106,6 +106,7 @@ email: string;
                     Company Name <span className="text-red-600">*</span>
                   </label>
                   <input
+                  {...register("companyName", { required: true })}
                     type="companyName"
                     id="companyName"
                     className="w-full px-3 py-2 border border-gray-400 rounded-lg text-sm"
@@ -120,6 +121,7 @@ email: string;
                     Company NMLS
                   </label>
                   <input
+                   {...register("nmls", { required: true })}
                     type="nmls"
                     id="nmls"
                     className="w-full px-3 py-2 border border-gray-400 rounded-lg text-sm"
@@ -133,6 +135,7 @@ email: string;
                     First & Last Name <span className="text-red-600">*</span>
                   </label>
                   <input
+                  {...register("name", { required: true })}
                     type="name"
                     id="name"
                     className="w-full px-3 py-2 border border-gray-400 rounded-lg text-sm"
@@ -147,6 +150,7 @@ email: string;
                     Your Email <span className="text-red-600">*</span>
                   </label>
                   <input
+                  {...register("email", { required: true })}
                     type="email"
                     id="email"
                     className="w-full px-3 py-2 border border-gray-400 rounded-lg text-sm"
@@ -156,9 +160,24 @@ email: string;
                 <button
                   type="submit"
                   className="w-full bg-blue-950 text-white py-2 px-4 rounded hover:bg-blue-900 cursor-pointer"
+                  disabled={isSubmitting || isSubmitSuccessful}
                 >
+                   {isSubmitting ? "Submitting..." : "Submit"}
                   Submit
                 </button>
+                <div>
+                {submissionStatus === "success" && (
+              <p className="text-green-600">
+                Thank you for your submission! We will get back to you as soon
+                as possible.
+              </p>
+            )}
+            {submissionStatus === "error" && (
+              <p className="text-red-600">
+                There was an error submitting the form. Please try again.
+              </p>
+            )}
+                </div>
               </form>
             </div>
           </div>

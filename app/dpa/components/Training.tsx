@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import image1 from "../../../public/dpa/webinarVideo.svg";
 
 

@@ -2,9 +2,9 @@
 
 import Image from "next/image";
 import image1 from "../../../public/dpa/webinarVideo.svg";
-import { useState, useEffect } from "react";
-import { useForm, SubmitHandler, SubmitErrorHandler } from "react-hook-form";
 import { DpaFormAccess } from "@/app/actions/DpaFormAccess";
+import { useState } from "react";
+import { useForm, SubmitHandler, SubmitErrorHandler } from "react-hook-form";
 
 type FormValues = {
 companyName: string;
@@ -13,62 +13,45 @@ name: string;
 email: string;
 };
 
-// export default function AccessTraining() {
-//   const [submissionStatus, setSubmissionStatus] = useState<
-//     "success" | "error" | null
-//   >(null);
+export default function AccessTraining() {
+    const [submissionStatus, setSubmissionStatus] = useState<
+    "success" | "error" | null
+  >(null);
 
-//   const {
-//     register,
-//     handleSubmit,
-//     reset,
-//     formState: { isSubmitting, isSubmitSuccessful, errors },
-//   } = useForm<FormValues>();
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { isSubmitting, isSubmitSuccessful, errors },
+  } = useForm<FormValues>();
 
-//   const onSubmit: SubmitHandler<FormValues> = async (data) => {
-//     const result = await AccessTraining(
-//       data.companyName,
-//       data.nmls,
-//       data.name,
-//       data.email,
-//     );
-//     console.log(result);
+  const onSubmit: SubmitHandler<FormValues> = async (data) => {
+    const result = await DpaFormAccess(
+      data.companyName,
+      data.nmls,
+      data.name,
+      data.email,
+    );
+    console.log(result);
 
-//     if (result.success === true) {
-//       setSubmissionStatus("success");
-//     } else {
-//       setSubmissionStatus("error");
-//     }
+    if (result.success === true) {
+        setSubmissionStatus("success");
+      } else {
+        setSubmissionStatus("error");
+      }
+  
+      reset();
+    };
+  
+    const onError: SubmitErrorHandler<FormValues> = (errors) => {
+      console.log(errors);
+    };
 
-//     reset();
-//   };
-
-//   const onError: SubmitErrorHandler<FormValues> = (errors) => {
-//     console.log(errors);
-//   };
-// }
-
-
-
-  const DpaForm = () => {
-    const [isModalOpen, setIsModalOpen] = useState(false);
-
-    useEffect(() => {
-        if (isModalOpen) {
-          document.body.classList.add("overflow-hidden");
-        } else {
-          document.body.classList.remove("overflow-hidden");
-        }
-    
-        return () => {
-          document.body.classList.remove("overflow-hidden");
-        };
-      }, [isModalOpen]);
   
     return (
       <section className="w-full h-full justify-items-center bg-white mx-auto max-w-screen-lg p-4 max-sm:pt-0">
         <div className="m-2 p-2 gap-4">
-        <button onClick={() => setIsModalOpen(true)} type="button" className="cursor-pointer">
+        <button type="button" className="cursor-pointer">
           <Image
             src={image1}
             width={800}
@@ -82,12 +65,10 @@ email: string;
           2025 NATIONAL DPA PROGRAM WEBINAR
         </p>
         
-        {isModalOpen && (
           <div className="fixed inset-0 z-50 flex items-center justify-center">
             <div className="bg-gray-300 p-12 rounded-lg shadow-md w-full max-w-lg relative">
               {/* the Close Button */}
               <button
-                onClick={() => setIsModalOpen(false)}
                 className="absolute top-2 right-2 text-gray-200 hover:text-gray-400 cursor-pointer"
               >
                 &times;
@@ -97,7 +78,7 @@ email: string;
               <h3 className="text-xl font-semibold mb-4 text-blue-950 ">
                 Get Access to our DPA Training Video
               </h3>
-              <form onSubmit={handleSubmit(onSubmit, onError)} className="space-y-4">
+              <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
               <div>
                   <label
                     htmlFor="companyName"
@@ -107,7 +88,7 @@ email: string;
                   </label>
                   <input
                   {...register("companyName", { required: true })}
-                    type="companyName"
+                    type="text"
                     id="companyName"
                     className="w-full px-3 py-2 border border-gray-400 rounded-lg text-sm"
                     required
@@ -122,7 +103,7 @@ email: string;
                   </label>
                   <input
                    {...register("nmls", { required: true })}
-                    type="nmls"
+                    type="text"
                     id="nmls"
                     className="w-full px-3 py-2 border border-gray-400 rounded-lg text-sm"
                   />
@@ -136,7 +117,7 @@ email: string;
                   </label>
                   <input
                   {...register("name", { required: true })}
-                    type="name"
+                    type="text"
                     id="name"
                     className="w-full px-3 py-2 border border-gray-400 rounded-lg text-sm"
                     required
@@ -163,7 +144,6 @@ email: string;
                   disabled={isSubmitting || isSubmitSuccessful}
                 >
                    {isSubmitting ? "Submitting..." : "Submit"}
-                  Submit
                 </button>
                 <div>
                 {submissionStatus === "success" && (
@@ -181,9 +161,7 @@ email: string;
               </form>
             </div>
           </div>
-        )}
       </section>
     );
   };
   
-  export default DpaForm;

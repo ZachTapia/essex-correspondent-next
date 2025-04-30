@@ -167,8 +167,9 @@ export default function AccessTraining() {
                 </div>
               </form>
             </div>
-          </div>
+            </div>
+        )}
       </section>
     );
-  };
+}
   

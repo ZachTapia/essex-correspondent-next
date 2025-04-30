@@ -17,6 +17,8 @@ export default function AccessTraining() {
     const [submissionStatus, setSubmissionStatus] = useState<
     "success" | "error" | null
   >(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
 
   const {
     register,
@@ -51,7 +53,7 @@ export default function AccessTraining() {
     return (
       <section className="w-full h-full justify-items-center bg-white mx-auto max-w-screen-lg p-4 max-sm:pt-0">
         <div className="m-2 p-2 gap-4">
-        <button type="button" className="cursor-pointer">
+        <button onClick={() => setIsModalOpen(true)} type="button" className="cursor-pointer">
           <Image
             src={image1}
             width={800}
@@ -65,11 +67,16 @@ export default function AccessTraining() {
           2025 NATIONAL DPA PROGRAM WEBINAR
         </p>
         
+        {isModalOpen && (
           <div className="fixed inset-0 z-50 flex items-center justify-center">
             <div className="bg-gray-300 p-12 rounded-lg shadow-md w-full max-w-lg relative">
               {/* the Close Button */}
               <button
                 className="absolute top-2 right-2 text-gray-200 hover:text-gray-400 cursor-pointer"
+                onClick={() => {
+                  setIsModalOpen(false);
+                  setSubmissionStatus(null);
+                }}
               >
                 &times;
               </button>

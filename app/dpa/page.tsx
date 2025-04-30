@@ -1,7 +1,7 @@
 import Footer from "../shared/Footer";
 import NavBar from "../shared/NavBar";
 // import DpaForm from "./components/AccessTrain";
-import AccessTraining from "./components/AT-test";
+import AccessTraining from "./components/AccessTraining";
 import EssexDif from "./components/EssexDifference";
 import Features from "./components/Features";
 import Resources from "./components/Resources";

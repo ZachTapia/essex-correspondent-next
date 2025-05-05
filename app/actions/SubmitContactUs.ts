@@ -3,9 +3,7 @@
 import sgMail from "@sendgrid/mail";
 
 // Initialize SendGrid with API key
-sgMail.setApiKey(
-  "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"
-);
+sgMail.setApiKey(process.env.SENDGRID_API_KEY!);
 
 export async function submitContactUs(
   firstName: string,

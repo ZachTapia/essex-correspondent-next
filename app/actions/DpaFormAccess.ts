@@ -3,9 +3,7 @@
 import sgMail from "@sendgrid/mail";
 
 // Initialize SendGrid with API key
-sgMail.setApiKey(
-  "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"
-);
+sgMail.setApiKey(process.env.SENDGRID_API_KEY!);
 
 export async function DpaFormAccess(
 companyName: string,
@@ -13,6 +11,9 @@ nmls: string,
 name: string,
 email: string,
 ) {
+
+  console.log("Inside DpaFormAccess. Data received:", { companyName, nmls, name, email });
+
   try {
     const msg = {
       to: "bwolkoys@essexmortgage.com",
@@ -28,7 +29,7 @@ email: string,
       success: true,
       message: "Form submitted successfully.",
     };
-  } catch (error) {
+  } catch (error: any) {
     console.error("Error:", error);
     return {
       success: false,

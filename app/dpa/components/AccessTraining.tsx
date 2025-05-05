@@ -28,6 +28,7 @@ export default function AccessTraining() {
   } = useForm<FormValues>();
 
   const onSubmit: SubmitHandler<FormValues> = async (data) => {
+    console.log("Submitting form with data:", data);
     const result = await DpaFormAccess(
       data.companyName,
       data.nmls,

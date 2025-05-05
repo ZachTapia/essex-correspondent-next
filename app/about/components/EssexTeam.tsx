@@ -24,8 +24,8 @@ const EssexTeam = () => {
             The Essex Correspondent Team has decades of experience in Mortgage
             Banking and Correspondent Lending. We know that without successful
             Clients, we ourselves cannot be successful. Our platform was created
-            around building "win/win" long term partnerships. We are the Team
-            that can make things happen for you!
+            around building &quot;win/win&quot; long term partnerships. We are
+            the Team that can make things happen for you!
           </p>
         </section>
 
@@ -47,7 +47,7 @@ const EssexTeam = () => {
                 Hailing from Essex, England, Roland Weedon founded Essex
                 Mortgage in 1986. With a background in education, Roland
                 remained adamant that educating the client would be the
-                company's #1 priority.
+                company&apos;s #1 priority.
               </p>
             </div>
           </div>
@@ -143,7 +143,6 @@ const EssexTeam = () => {
             </p>
           </div>
 
-
           <div className="m-2 p-2 items-start gap-4 justify-items-center">
             <Image
               src={image6}
@@ -159,13 +158,12 @@ const EssexTeam = () => {
               National Account Executive
             </p>
             <p className="font-light text-sm text-gray-800 pt-4">
-            818.288.4093
+              818.288.4093
             </p>
             <p className="font-light text-sm text-gray-800">
-            chowley@essexmortgage.com
+              chowley@essexmortgage.com
             </p>
           </div>
-
 
           <div className="m-2 p-2 items-start gap-4 justify-items-center">
             <Image
@@ -182,13 +180,12 @@ const EssexTeam = () => {
               National Account Executive
             </p>
             <p className="font-light text-sm text-gray-800 pt-4">
-            714.919.8021
+              714.919.8021
             </p>
             <p className="font-light text-sm text-gray-800">
-            cnager@essexmortgage.com
+              cnager@essexmortgage.com
             </p>
           </div>
-
 
           <div className="m-2 p-2 items-start gap-4 justify-items-center">
             <Image
@@ -205,10 +202,10 @@ const EssexTeam = () => {
               National Account Executive
             </p>
             <p className="font-light text-sm text-gray-800 pt-4">
-            214.725.7517
+              214.725.7517
             </p>
             <p className="font-light text-sm text-gray-800">
-            dsears@essexmortgage.com
+              dsears@essexmortgage.com
             </p>
           </div>
         </section>

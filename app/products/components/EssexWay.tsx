@@ -1,24 +1,27 @@
 import Image from "next/image";
-import image1 from "../../../public/products-programs/pricing-model.svg"
-import image2 from "../../../public/products-programs/credit-policy.svg"
-import image3 from "../../../public/products-programs/servicing-revenue.svg"
-import image4 from "../../../public//products-programs/nationwide-options.svg"
+import image3 from "../../../public/products-programs/servicing-revenue.svg";
 
 const EssexWay = () => {
-    return (
-        <>
-        <section className="w-full h-full bg-white mx-auto max-w-screen-lg flex flex-col pl-4 pr-4 pt-4">
-            <h1 className="text-blue-950 text-center text-4xl font-light ">The Essex Way</h1>
-            <hr className="w-40 h-1.5 mx-auto bg-gray-100 border-0 my-4 dark:bg-blue-950"></hr>
-            <p className="text-black text-center text-lg">
-            We empower our clients to take control of their futures so they can serve their teams and borrowers 100% of the time - not just when the market is favorable. Our offerings are backed by a business model designed to give you flexability, transparency, and long-term growth potential.
-          </p>
-          <h2 className="text-blue-950 text-center text-2xl font-light pt-8 ">
-            When You Work With Essex:
-          </h2>
-        </section>
+  return (
+    <>
+      <section className="w-full h-full bg-white mx-auto max-w-screen-lg flex flex-col pl-4 pr-4 pt-4">
+        <h1 className="text-blue-950 text-center text-4xl font-light ">
+          The Essex Way
+        </h1>
+        <hr className="w-40 h-1.5 mx-auto bg-gray-100 border-0 my-4 dark:bg-blue-950"></hr>
+        <p className="text-black text-center text-lg">
+          We empower our clients to take control of their futures so they can
+          serve their teams and borrowers 100% of the time - not just when the
+          market is favorable. Our offerings are backed by a business model
+          designed to give you flexability, transparency, and long-term growth
+          potential.
+        </p>
+        <h2 className="text-blue-950 text-center text-2xl font-light pt-8 ">
+          When You Work With Essex:
+        </h2>
+      </section>
 
-        <section className=" grid h-full w-full grid-cols-1 bg-white p-2 text-black md:grid-cols-2 max-w-screen-lg mx-auto">
+      <section className=" grid h-full w-full grid-cols-1 bg-white p-2 text-black md:grid-cols-2 max-w-screen-lg mx-auto">
         {/* <div className="m-4 p-2"> */}
         {/* <Image
           src={image1}
@@ -35,7 +38,7 @@ const EssexWay = () => {
             </p>
           </div> */}
 
-          {/* <div className="m-4 p-2 max-sm:pt-0">
+        {/* <div className="m-4 p-2 max-sm:pt-0">
           <Image
           src={image2}
           width={500}
@@ -51,7 +54,7 @@ const EssexWay = () => {
             </p>
           </div> */}
 
-          {/* <div className="m-4 p-2 max-sm:pt-0">
+        {/* <div className="m-4 p-2 max-sm:pt-0">
           <Image
           src={image3}
           width={500}
@@ -67,25 +70,31 @@ const EssexWay = () => {
             </p>
           </div> */}
 
-          <div className=" pb-4 max-sm:pt-0 justify-items-center">
+        <div className=" pb-4 max-sm:pt-0 justify-items-center">
           <Image
-          src={image3}
-          width={350}
-          height={100}
-          alt="working with Essex Correspondent"
-          className="pt-4"
-        />
-          </div>
-          <div>
+            src={image3}
+            width={350}
+            height={100}
+            alt="working with Essex Correspondent"
+            className="pt-4"
+          />
+        </div>
+        <div>
           {/* <h1 className="justify-items-center pt-4 text-lg text-blue-950">
             </h1> */}
-            <p className="font-light pt-10 max-sm:pt-4 max-sm:text-center"> 
-            You&apos;re a part of a team committed to trusted partnerships, consistent service, and forward-thinking solutions. In addition to offering long-term value through servicing opportunities, Essex empowers lenders with innovative products like Down Payment Assistance programs—designed to help more borrowers achieve homeownership. It's a place where meaningful impact meets meaningful work.
-            </p>
-          </div>
-        </section>
-        </>
-    )
+          <p className="font-light pt-10 max-sm:pt-4 max-sm:text-center">
+            You&apos;re a part of a team committed to trusted partnerships,
+            consistent service, and forward-thinking solutions. In addition to
+            offering long-term value through servicing opportunities, Essex
+            empowers lenders with innovative products like Down Payment
+            Assistance programs—designed to help more borrowers achieve
+            homeownership. It&apos;s a place where meaningful impact meets
+            meaningful work.
+          </p>
+        </div>
+      </section>
+    </>
+  );
 };
 
 export default EssexWay;

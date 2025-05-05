@@ -16,7 +16,7 @@ email: string,
 
   try {
     const msg = {
-      to: "bwolkoys@essexmortgage.com",
+      to: "correspondent-marketing@essexmortgage.com",
       from: "noreply@essexmortgage.com",
       subject: "New DPA Form Submission to Access DPA Webinar",
       text: `A new DPA access form submission has been submitted:\n\nCompany Name: ${companyName}\nCompany NMLS: ${nmls}\nEmail: ${email}\nName: ${name}`,

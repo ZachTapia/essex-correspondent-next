@@ -1,5 +1,5 @@
 import Image from "next/image";
-import image1 from "../../../public/about-page/salesmap.svg"
+import image1 from "../../../public/about-page/TMAP.svg"
 
 const TerritoryMap = () => {
     return (

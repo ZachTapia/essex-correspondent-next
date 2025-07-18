@@ -19,7 +19,7 @@ const Resources = () => {
       <section className="grid h-full w-full grid-cols-1 p-2 justify-items-center text-black md:grid-cols-2 max-w-screen-lg mx-auto">
         <div className="m-2 p-2 gap-4">
           <a
-            href="https://essexcorrespondent.com/resources_amortized_all_states.pdf"
+            href="/dpa/ESSEX_NHF_DPA_SHEET_AMORTIZED.pdf"
             target="_blank"
           >
             <Image
@@ -34,8 +34,9 @@ const Resources = () => {
 
         <div className="m-2 p-2 gap-4">
           <a
-            href="https://essexcorrespondent.com/resources_amortized_washington_state.pdf"
+            href="/dpa/Essex_Washington_State_Amort.pdf"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <Image
               src={image2}
@@ -49,7 +50,7 @@ const Resources = () => {
 
         <div className="m-2 p-2 gap-4">
           <a
-            href="https://essexcorrespondent.com/resources_forgivable_all_states.pdf"
+            href="/dpa/ESSEX_NHF _SHEET_FORGIVALE.pdf"
             target="_blank"
           >
             <Image

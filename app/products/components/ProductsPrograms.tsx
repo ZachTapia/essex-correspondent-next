@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import image1 from "../../../public/products-programs/dpa.svg";
 import image2 from "../../../public/products-programs/govt-ent.svg";
+import image3 from "../../../public/products-programs/product-flow.svg"
 
 const ProductsPrograms = () => {
   return (
@@ -39,17 +40,17 @@ const ProductsPrograms = () => {
             </a>
           </div>
 
-          {/* <div className="m-2 p-2 gap-4">
-            <a href="" target="_blank">
+          <div className="m-2 p-2 gap-4">
+            <a href="/products-programs/Basic-Product-Flow.pdf/" target="_blank">
               <Image
                 src={image3}
                 width={800}
                 height={100}
-                alt="TRIO Program (TBA)"
+                alt="Essex Product Flow"
                 className="pt-4"
               />
             </a>
-          </div> */}
+          </div>
         </section>
       </section>
       <section className="w-full bg-gray-200 h-[60px] sm:h-[70px] md:h-[90px] [clip-path:polygon(0_0,100%_0,50%_100%)]"></section>

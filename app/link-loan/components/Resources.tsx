@@ -15,7 +15,7 @@ const Resources = () => {
 
         <section className="grid h-full w-full grid-cols-1 p-2 justify-items-center text-black md:grid-cols-2 max-w-screen-lg mx-auto">
           <div className="m-2 p-2 gap-4">
-            <a href="https://essexcorrespondent.com/resources_link_loan_overview.pdf" target="_blank">
+            <a href="/link-loan/Trio-Link-Matrix.pdf" target="_blank">
               <Image
                 src={image1}
                 width={800}

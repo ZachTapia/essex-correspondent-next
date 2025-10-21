@@ -1,7 +1,7 @@
 import Image from "next/image";
 import image1 from "../../../public/link-loan/link-matrix.svg";
 import image2 from "../../../public/link-loan/ll-website.svg";
-import image3 from "../../../public/link-loan/LinkLoanFillable.svg";
+import image3 from "../../../public/link-loan/flow-chart.svg";
 
 const Resources = () => {
   return (

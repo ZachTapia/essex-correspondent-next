@@ -156,7 +156,7 @@ export default function NavBar() {
               </li>
 
               <li className="mt-4">
-                <Link href="https://essex.lauramac.io/#/" target="_blank">
+                <Link href="https://7608605446.encompasstpoconnect.com/#/content/idplogin" target="_blank">
                   <button className="bg-blue-950 text-white px-8 py-2 font-medium rounded-md hover:bg-gray-600">
                     CLIENT LOGIN
                   </button>
@@ -237,7 +237,7 @@ export default function NavBar() {
               </li>
 
               <li>
-                <Link href="https://essex.lauramac.io/#/" target="_blank">
+                <Link href="https://7608605446.encompasstpoconnect.com/#/content/idplogin" target="_blank">
                   <button className="bg-blue-950 hover:bg-gray-600 font-medium text-white px-8 py-2 cursor-pointer">
                     CLIENT LOGIN
                   </button>

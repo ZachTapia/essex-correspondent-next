@@ -50,7 +50,7 @@ const Footer = () => {
               </li>
               <li className="pb-2">
                 <a
-                  href="https://essex.lauramac.io/#/"
+                  href="https://7608605446.encompasstpoconnect.com/#/content/idplogin"
                   className="hover:underline"
                   target="_blank"
                 >
@@ -61,13 +61,13 @@ const Footer = () => {
           </div>
 
           <div className="m-4 max-sm:m-2 bg-blue-950 p-6 text-center">
-          <div className="flex justify-center items-center gap-4">
-          <Image
+          <div className="flex justify-center items-center gap-4 pt-6">
+          {/* <Image
               src={image3}
               width={120}
               height={150}
               alt="Top workplace logo"
-            ></Image>
+            ></Image> */}
             <Image
               src={image2}
               width={100}

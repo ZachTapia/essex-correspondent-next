@@ -19,14 +19,14 @@ const Resources = () => {
       <section className="grid h-full w-full grid-cols-1 p-2 justify-items-center text-black md:grid-cols-2 max-w-screen-lg mx-auto">
         <div className="m-2 p-2 gap-4">
           <a
-            href="/dpa/ESSEX_NHF_DPA_SHEET_AMORTIZED.pdf"
+            href="/dpa/resources_amortized_all_states.pdf"
             target="_blank"
           >
             <Image
               src={image1}
               width={800}
               height={100}
-              alt="Amortized All States document link"
+              alt="Amortized All States except NY and WA document link"
               className="pt-4"
             />
           </a>
@@ -34,7 +34,7 @@ const Resources = () => {
 
         <div className="m-2 p-2 gap-4">
           <a
-            href="/dpa/Essex_Washington_State_Amort.pdf"
+            href="/dpa/resources_amortized_washington_state.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -50,7 +50,7 @@ const Resources = () => {
 
         <div className="m-2 p-2 gap-4">
           <a
-            href="/dpa/ESSEX_NHF _SHEET_FORGIVALE.pdf"
+            href="/dpa/resources_forgivable_all_states.pdf"
             target="_blank"
           >
             <Image
@@ -65,7 +65,7 @@ const Resources = () => {
 
         <div className="m-2 p-2 gap-4">
           <a
-            href="https://essexcorrespondent.com/resources_down_payment_fillable.pdf"
+            href="/dpa/resources_down_payment_fillable.pdf"
             target="_blank"
           >
             <Image
@@ -80,7 +80,7 @@ const Resources = () => {
 
         <div className="m-2 p-2 gap-4">
           <a
-            href="https://essexcorrespondent.com/resources_dpa_faq.pdf"
+            href="/dpa/resources_dpa_faq.pdf"
             target="_blank"
           >
             <Image
@@ -95,7 +95,7 @@ const Resources = () => {
 
         <div className="m-2 p-2 gap-4">
           <a
-            href="https://essexcorrespondent.com/resources_down_payment.pdf"
+            href="/dpa/resources_down_payment.pdf"
             target="_blank"
           >
             <Image

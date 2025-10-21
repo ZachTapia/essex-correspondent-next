@@ -40,20 +40,20 @@ const Resources = () => {
 
       <section className="grid h-full w-full grid-cols-1 p-2 justify-items-center text-black md:grid-cols-2 max-w-screen-lg mx-auto">
           <div className="m-2 p-2 gap-4">
-            <a href="/FillableLinkLoanSummary.pdf" target="_blank">
+            <a href="/link-loan/resources_link_loan_flow.pdf" target="_blank">
               <Image
                 src={image3}
                 width={800}
                 height={100}
-                alt="Link Loan Program Overview document link"
+                alt="Link Loan Flow Chart"
                 className="pt-4"
               />
             </a>
           </div>
           <div className="gap-4 m-2 p-2 pt-6 text-lg  mx-auto max-w-screen-lg">
-            <p className="text-red-500 pb-2">
+            {/* <p className="text-red-500 pb-2">
             * Adobe Acrobat Pro must be used to add custome images and logos to fillable flyers
-            </p>
+            </p> */}
           <p className="text-blue-950 pb-4">
             This is meant for business to business communication only and is subject to review and approval by the Correspondent's Compliance Department.
             </p>

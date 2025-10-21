@@ -1,4 +1,5 @@
 "use server";
+import 'server-only';      // extra guard (optional but helpful)
 
 import sgMail from "@sendgrid/mail";
 

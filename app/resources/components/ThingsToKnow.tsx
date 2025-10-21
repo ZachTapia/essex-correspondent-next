@@ -28,10 +28,10 @@ const ThingsToKnow = () => {
           </h1>
           <ul>
             <li className="font-extralight text-lg pt-2 flex items-center gap-2">
-              - 100% Financing
+              - Up to 101.5% Financing
             </li>
             <li className="font-extralight text-lg flex items-center gap-2">
-              - FHA or Conventional Products to 100%
+              - FHA Products
             </li>
             <li className="font-extralight text-lg flex items-center gap-2">
               - Rebate Pricing to Help with Closing Costs

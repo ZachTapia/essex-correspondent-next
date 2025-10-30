@@ -18,7 +18,7 @@ const EssexDifference = () => {
               <span className="text-4xl">01</span> Trusted Partnerships
             </h1>
             <p className="font-light">
-            With diligent underwriting, we trust your process and support your team
+            Over 20 years of DPA leadership built on trust and results.
             </p>
             <Image
           src={image1}
@@ -34,7 +34,7 @@ const EssexDifference = () => {
               <span className="text-4xl">02</span> Consistency
             </h1>
             <p className="font-light">
-              We obligate ourselves to credit parameters and profit margin
+            Proven experience. Stable pricing. Certainty you can count on.
             </p>
             <Image
           src={image2}
@@ -50,7 +50,7 @@ const EssexDifference = () => {
               <span className="text-4xl">03</span> Efficiency
             </h1>
             <p className="font-light">
-            The most efficient process—no fees and no surprises
+            A dependable process for fast closings and clear DPA delivery.
             </p>
             <Image
           src={image3}

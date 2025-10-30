@@ -10,11 +10,7 @@ const EssexWay = () => {
         </h1>
         <hr className="w-40 h-1.5 mx-auto bg-gray-100 border-0 my-4 dark:bg-blue-950"></hr>
         <p className="text-black text-center text-lg">
-          We empower our clients to take control of their futures so they can
-          serve their teams and borrowers 100% of the time - not just when the
-          market is favorable. Our offerings are backed by a business model
-          designed to give you flexability, transparency, and long-term growth
-          potential.
+        Essex Correspondent Lending helps our partners thrive in every market by combining expert guidance with flexible, transparent solutions. As a leader in Down Payment Assistance products, we’ve set the standard for simplifying delivery and review — giving our partners the confidence and control to serve their borrowers 100% of the time. Our nationwide product offering ensures consistency, efficiency, and long-term growth potential.
         </p>
         <h2 className="text-blue-950 text-center text-2xl font-light pt-8 ">
           When You Work With Essex:
@@ -84,9 +80,8 @@ const EssexWay = () => {
             </h1> */}
           <p className="font-light pt-10 max-sm:pt-4 max-sm:text-center">
             You&apos;re a part of a team committed to trusted partnerships,
-            consistent service, and forward-thinking solutions. In addition to
-            offering long-term value through servicing opportunities, Essex
-            empowers lenders with innovative products like Down Payment
+            consistent service, and forward-thinking solutions. Essex
+            offers nationwide products like Down Payment
             Assistance programs—designed to help more borrowers achieve
             homeownership. It&apos;s a place where meaningful impact meets
             meaningful work.

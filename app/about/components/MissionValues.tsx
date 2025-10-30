@@ -17,7 +17,7 @@ const MissionValues = () => {
               <span className="text-4xl">01</span> Trusted Partnerships
             </h1>
             <p className="font-light">
-            With delegated underwriting in place, we trust your process and team&apos;s decisions. Our role is to support—not second-guess—your underwriters.
+            We build lasting partnerships through dependable service, proven DPA expertise, and a shared commitment to bringing families home.
             </p>
             <Image
           src={image1}
@@ -33,7 +33,7 @@ const MissionValues = () => {
               <span className="text-4xl">02</span> Certainty
             </h1>
             <p className="font-light">
-              We contractually obligate ourselves to our profit margin and credit parameters, therefore the only variable in our process is the market.
+            Decades of experience in Down Payment Assistance give us the foundation to deliver stable pricing and unwavering purchasing certainty.
             </p>
             <Image
           src={image2}
@@ -49,7 +49,7 @@ const MissionValues = () => {
               <span className="text-4xl">03</span> Efficiency
             </h1>
             <p className="font-light"> 
-            The process is efficient and predictable, with no unexpected fees like roll, extension, or pair-off fees. Pricing and guidelines are clear.
+            A simplified, dependable process that ensures fast, predictable closings and clear, consistent DPA delivery every time.
             </p>
             <Image
           src={image3}

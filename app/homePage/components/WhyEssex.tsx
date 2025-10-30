@@ -40,10 +40,7 @@ const WhyEssex = () => {
                 d="M19 12H5m14 0-4 4m4-4-4-4"
               />
             </svg>
-            At Essex Correspondent, we empower our clients to control their
-            destinies so they can serve their employees and customers 100% of
-            the time regardless of what is going on in the marketplace, not just
-            when times are good.
+            At Essex Correspondent Lending, we give our partners the confidence to close with certainty. With over 20 years of DPA leadership, our proven process, nationwide reach, and boutique service help more families achieve homeownership.
           </p>
           <p className="font-extralight flex items-center gap-2">
           <svg
@@ -63,9 +60,7 @@ const WhyEssex = () => {
                 d="M19 12H5m14 0-4 4m4-4-4-4"
               />
             </svg>
-            You are given a Transparent Pricing Model. You can Dictate your
-            Credit Policy. You can Participate in a Long - Term Servicing
-            Revenue. You can offer Nationwide Down Payment Options.
+            Partner with confidence through transparent pricing, flexible credit control, long-term servicing revenue, and nationwide DPA programs that help more families achieve homeownership.
           </p>
         </div>
       </section>

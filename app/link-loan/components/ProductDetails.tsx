@@ -48,7 +48,7 @@ const ProductDetails = () => {
             <p className="pb-4 text-black">
               Trio&apos;s product allows qualified consumers to identify a home
               within their monthly affordability range and you will facilitate
-              purchase financing to a Governmental Entity.
+              purchase financing from a Governmental Entity.
             </p>
             <h1 className="text-xl font-semibold text-blue-950">
               How Does Your Company Use This Product?

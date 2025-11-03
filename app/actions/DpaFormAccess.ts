@@ -1,5 +1,5 @@
 "use server";
-import 'server-only';      // extra guard (optional but helpful)
+import "server-only"; // extra guard (optional but helpful)
 
 import sgMail from "@sendgrid/mail";
 
@@ -7,13 +7,17 @@ import sgMail from "@sendgrid/mail";
 sgMail.setApiKey(process.env.SENDGRID_API_KEY!);
 
 export async function DpaFormAccess(
-companyName: string,
-nmls: string,
-name: string,
-email: string,
+  companyName: string,
+  nmls: string,
+  name: string,
+  email: string
 ) {
-
-  console.log("Inside DpaFormAccess. Data received:", { companyName, nmls, name, email });
+  console.log("Inside DpaFormAccess. Data received:", {
+    companyName,
+    nmls,
+    name,
+    email,
+  });
 
   try {
     const msg = {
@@ -30,7 +34,7 @@ email: string,
       success: true,
       message: "Form submitted successfully.",
     };
-  } catch (error: any) {
+  } catch (error) {
     console.error("Error:", error);
     return {
       success: false,

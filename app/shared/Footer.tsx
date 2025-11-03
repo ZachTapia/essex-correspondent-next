@@ -1,7 +1,6 @@
 import Image from "next/image";
 import image1 from "../../public/shared/whiteLogo.svg";
 import image2 from "../../public/shared/equal-lender.svg";
-import image3 from "../../public/shared/TWP-2012-2020-Text_Layer.png";
 
 const Footer = () => {
   return (
@@ -61,21 +60,20 @@ const Footer = () => {
           </div>
 
           <div className="m-4 max-sm:m-2 bg-blue-950 p-6 text-center">
-          <div className="flex justify-center items-center gap-4 pt-6">
-          {/* <Image
+            <div className="flex justify-center items-center gap-4 pt-6">
+              {/* <Image
               src={image3}
               width={120}
               height={150}
               alt="Top workplace logo"
             ></Image> */}
-            <Image
-              src={image2}
-              width={100}
-              height={150}
-              alt="equal housing lender logo"
-            ></Image>
-           
-          </div>
+              <Image
+                src={image2}
+                width={100}
+                height={150}
+                alt="equal housing lender logo"
+              ></Image>
+            </div>
           </div>
         </section>
 

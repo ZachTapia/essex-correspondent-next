@@ -14,13 +14,13 @@ const EssexTeam = () => {
       <section className="bg-gray-200">
         <section className="w-full h-full bg-gray-200 mx-auto max-w-screen-lg flex flex-col pl-4 pr-4 pt-6">
           <h1 className="text-blue-950 text-center text-4xl font-light ">
-            The ESSEX Team
+          The Essex Team
           </h1>
           <hr className="w-40 h-1.5 mx-auto bg-gray-100 border-0 my-4 dark:bg-blue-950"></hr>
-          <p className="text-black text-center text-lg">
+          {/* <p className="text-black text-center text-lg">
             OUR TEAM THAT MAKES IT HAPPEN
-          </p>
-          <p className="pt-4 text-black text-center text-sm pb-4">
+          </p> */}
+          <p className=" text-black text-center text-lg pb-4">
             The Essex Correspondent Team has decades of experience in Mortgage
             Banking and Correspondent Lending. We know that without successful
             Clients, we ourselves cannot be successful. Our platform was created
@@ -210,6 +210,7 @@ const EssexTeam = () => {
           </div>
         </section>
       </section>
+       <section className="w-full bg-gray-200 h-[60px] sm:h-[70px] md:h-[90px] [clip-path:polygon(0_0,100%_0,50%_100%)]"></section>
     </>
   );
 };

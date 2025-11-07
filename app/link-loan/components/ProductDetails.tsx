@@ -2,7 +2,6 @@ import Image from "next/image";
 import image1 from "../../../public/link-loan/closings-today.svg";
 import image2 from "../../../public/link-loan/entities.svg";
 import image3 from "../../../public/link-loan/product1.svg";
-import Link from "next/link";
 
 const ProductDetails = () => {
   return (
@@ -78,10 +77,15 @@ const ProductDetails = () => {
               Our team is here to help. Connect with one of our experienced
               Account Executives to get answers to your questions.
             </p>
-            <button className="border-2 border-blue-950/100 bg-blue-950 p-2 pl-8 pr-8 font-semibold text-white transition delay-150 duration-300 hover:scale-110 hover:bg-blue-950">
-              <Link href="/about" target="_blank">
+            <button className="pt-4">
+              <a
+                href="/about"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-4 bg-blue-950 text-white hover:bg-gray-600 transition"
+              >
                 CONTACT AN AE
-              </Link>
+              </a>
             </button>
           </div>
         </section>

@@ -17,7 +17,7 @@ const MissionValues = () => {
               <span className="text-4xl">01</span> Trusted Partnerships
             </h1>
             <p className="font-light">
-            We build lasting partnerships through dependable service, proven DPA expertise, and a shared commitment to bringing families home.
+            Building lasting partnerships through dependable service and proven expertise.
             </p>
             <Image
           src={image1}
@@ -33,7 +33,7 @@ const MissionValues = () => {
               <span className="text-4xl">02</span> Certainty
             </h1>
             <p className="font-light">
-            Decades of experience in Down Payment Assistance give us the foundation to deliver stable pricing and unwavering purchasing certainty.
+            Decades of experience give us the foundation to deliver stable pricing and unwavering purchasing certainty.
             </p>
             <Image
           src={image2}
@@ -49,7 +49,7 @@ const MissionValues = () => {
               <span className="text-4xl">03</span> Efficiency
             </h1>
             <p className="font-light"> 
-            A simplified, dependable process that ensures fast, predictable closings and clear, consistent DPA delivery every time.
+            A simplified, dependable process that ensures fast, predictable closings and clear, consistent delivery every time.
             </p>
             <Image
           src={image3}

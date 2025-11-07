@@ -17,7 +17,6 @@ export default function NavBar() {
   const navItems = [
     { name: "HOME", href: "/" },
     { name: "ABOUT", href: "/about" },
-    { name: "RESOURCES", href: "/resources" },
   ];
 
   return (
@@ -150,13 +149,25 @@ export default function NavBar() {
                     : "text-black"
                 }`}
               >
+                <Link href="/resources" className="flex items-center">
+                  RESOURCES
+                </Link>
+              </li>
+
+              <li
+                className={`flex items-center p-1 text-lg font-medium gap-x-2 hover:text-gray-300 ${
+                  pathname === "/contact"
+                    ? "text-gray-300 font-bold"
+                    : "text-black"
+                }`}
+              >
                 <Link href="/contact" className="flex items-center">
                   CONTACT
                 </Link>
               </li>
 
               <li className="mt-4">
-                <Link href="https://7608605446.encompasstpoconnect.com/#/content/idplogin" target="_blank">
+                <Link href="https://essex.lauramac.io/#/" target="_blank">
                   <button className="bg-blue-950 text-white px-8 py-2 font-medium rounded-md hover:bg-gray-600">
                     CLIENT LOGIN
                   </button>
@@ -231,13 +242,25 @@ export default function NavBar() {
                     : "text-black"
                 }`}
               >
+                <Link href="/resources" className="flex items-center">
+                  RESOURCES
+                </Link>
+              </li>
+
+              <li
+                className={`flex items-center p-1 text-lg font-medium gap-x-2 hover:text-gray-300 ${
+                  pathname === "/contact"
+                    ? "text-gray-300 font-bold"
+                    : "text-black"
+                }`}
+              >
                 <Link href="/contact" className="flex items-center">
                   CONTACT
                 </Link>
               </li>
 
               <li>
-                <Link href="https://7608605446.encompasstpoconnect.com/#/content/idplogin" target="_blank">
+                <Link href="https://essex.lauramac.io/#/" target="_blank">
                   <button className="bg-blue-950 hover:bg-gray-600 font-medium text-white px-8 py-2 cursor-pointer">
                     CLIENT LOGIN
                   </button>

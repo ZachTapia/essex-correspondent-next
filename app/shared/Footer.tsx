@@ -49,7 +49,7 @@ const Footer = () => {
               </li>
               <li className="pb-2">
                 <a
-                  href="https://7608605446.encompasstpoconnect.com/#/content/idplogin"
+                  href="https://essex.lauramac.io/#/"
                   className="hover:underline"
                   target="_blank"
                 >

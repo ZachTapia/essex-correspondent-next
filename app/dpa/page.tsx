@@ -1,7 +1,5 @@
 import Footer from "../shared/Footer";
 import NavBar from "../shared/NavBar";
-// import DpaForm from "./components/AccessTrain";
-import AccessTraining from "./components/AccessTraining";
 import EssexDif from "./components/EssexDifference";
 import Features from "./components/Features";
 import Resources from "./components/Resources";
@@ -16,10 +14,9 @@ const ProductsPage = () => {
         <NavBar />
         <main className="h-full w-full bg-white">
            <SectionHeader />
-           <ThingsToKnow />
            <Features />
            <Resources />
-          <AccessTraining />
+           <ThingsToKnow />
            <EssexDif />
 
         </main>

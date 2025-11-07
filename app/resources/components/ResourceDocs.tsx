@@ -49,7 +49,7 @@ const ResourceDocs = () => {
             </a>
           </div> */}
 
-          <div className="m-2 p-2 gap-4 text-gray-400">
+          <div className=" pt-2 gap-4 text-gray-400">
             <h1>
                 * Check with your representative for further details on state requirements
             </h1>

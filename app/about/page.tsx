@@ -1,7 +1,7 @@
 import Footer from "../shared/Footer";
 import NavBar from "../shared/NavBar";
 import EssexTeam from "./components/EssexTeam";
-import MissionValues from "./components/MissionValues";
+import EssexWay from "./components/EssexWay";
 import SectionHeader from "./components/SectionHeader";
 import TerritoryMap from "./components/TerritoryMap";
 
@@ -13,7 +13,7 @@ const AboutPage = () => {
         <main className="h-full w-full bg-white">
             
             <SectionHeader />
-            <MissionValues />
+            <EssexWay />
             <EssexTeam />
             <TerritoryMap />
         

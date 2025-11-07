@@ -40,7 +40,7 @@ const WhyEssex = () => {
                 d="M19 12H5m14 0-4 4m4-4-4-4"
               />
             </svg>
-            At Essex Correspondent Lending, we give our partners the confidence to close with certainty. With over 20 years of DPA leadership, our proven process, nationwide reach, and boutique service help more families achieve homeownership.
+            At Essex Correspondent Lending, we give our partners the confidence to close with certainty. With over 20 years of DPA leadership, our proven process, nationwide reach, and elevated service help more families achieve homeownership.
           </p>
           <p className="font-extralight flex items-center gap-2">
           <svg
@@ -60,7 +60,7 @@ const WhyEssex = () => {
                 d="M19 12H5m14 0-4 4m4-4-4-4"
               />
             </svg>
-            Partner with confidence through transparent pricing, flexible credit control, long-term servicing revenue, and nationwide DPA programs that help more families achieve homeownership.
+            Partner with confidence through transparent pricing, flexible credit control and nationwide DPA programs that help more families achieve homeownership.
           </p>
         </div>
       </section>

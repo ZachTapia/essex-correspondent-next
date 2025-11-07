@@ -4,8 +4,8 @@ import image1 from "../../../public/dpa/feature.svg";
 const Features = () => {
   return (
     <>
-    <section className="bg-gray-200 pt-4">
-      <section className=" grid h-full w-full grid-cols-1 bg-gray-200 text-black md:grid-cols-2 max-w-screen-lg mx-auto">
+    <section className="bg-white pt-4 pb-8">
+      <section className=" grid h-full w-full grid-cols-1 bg-white text-black md:grid-cols-2 max-w-screen-lg mx-auto">
         <div>
           <Image
             src={image1}
@@ -42,7 +42,6 @@ const Features = () => {
         </div>
       </section>
       </section>
-      <section className="w-full bg-gray-200 h-[60px] sm:h-[70px] md:h-[90px] [clip-path:polygon(0_0,100%_0,50%_100%)]"></section>
     </>
   );
 };

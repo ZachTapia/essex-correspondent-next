@@ -1,5 +1,5 @@
 import Image from "next/image";
-import image1 from "../../../public/link-loan/gov-ll-header.svg";
+import image1 from "../../../public/link-loan/Link-loan-header.svg";
 
 const SectionHeader = () => {
   return (

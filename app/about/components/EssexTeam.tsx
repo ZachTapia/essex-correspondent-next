@@ -152,7 +152,7 @@ const EssexTeam = () => {
               className="pt-4"
             />
             <h1 className=" text-lg font-light text-blue-950 pt-2">
-              <span className="font-bold">CHRIS</span> HOWLE
+              <span className="font-bold">CHRIS</span> HOWLEY
             </h1>
             <p className=" font-light text-sm text-gray-800">
               National Account Executive

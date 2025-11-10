@@ -51,7 +51,7 @@ const Resources = () => {
 
         <div className="m-2 p-2 gap-4">
           <a
-            href="/dpa/resources_forgivable_all_states.pdf"
+            href="/dpa/ESSEX-NHF-TERM-FORGIVABLE-not-NY-WA.pdf"
             target="_blank"
           >
             <Image

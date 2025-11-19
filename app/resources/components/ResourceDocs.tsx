@@ -1,6 +1,7 @@
 import Image from "next/image";
 import image1 from "../../../public/resources/becoming-approved.svg";
 import image2 from "../../../public/resources/NDP-options.svg";
+import image3 from "../../../public/resources/dpa-training-presentation.svg"
 
 const ResourceDocs = () => {
     return (
@@ -26,7 +27,7 @@ const ResourceDocs = () => {
           </div>
 
           <div className="m-2 p-2 gap-4">
-          <a href="https://essexcorrespondent.com/resources_down_payment.pdf" target="_blank">
+          <a href="/resources/resources_down_payment.pdf" target="_blank">
             <Image
               src={image2}
               width={800}
@@ -37,17 +38,17 @@ const ResourceDocs = () => {
             </a>
           </div>
 
-          {/* <div className="m-2 p-2 gap-4">
-          <a href="" target="_blank">
+          <div className="m-2 p-2 gap-4">
+          <a href="/resources/DPASalesLoanOfficerTrainingDeck11-12-2025.pdf" target="_blank">
             <Image
               src={image3}
               width={800}
               height={100}
-              alt="Image of Diane"
+              alt="DPA Training Presentation"
               className="pt-4"
             />
             </a>
-          </div> */}
+          </div>
 
           <div className=" pt-2 gap-4 text-gray-400">
             <h1>

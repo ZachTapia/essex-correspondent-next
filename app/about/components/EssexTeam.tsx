@@ -66,7 +66,7 @@ const EssexTeam = () => {
               </h1>
               <p className=" font-semibold text-gray-800">President</p>
               <p className="font-light text-sm text-gray-800 pt-4">
-                Diane Nichols, President / Chief Operations Officers, joined
+                Diane Nichols, President / Chief Operations Officer, joined
                 Essex Mortgage in 2010 where she originally took on the role as
                 our Operations Manager. Shortly after, she was appointed
                 Director of Operations to help oversee the entire operations

@@ -55,6 +55,18 @@ const ProductsPrograms = () => {
           </a>
         </div>
 
+        <div className="m-2 p-4 gap-4">
+          <p className="text-red-700 pb-4">
+            * Adobe Acrobat Pro must be used to add custome images and logos to
+            fillable flyers
+          </p>
+          <p className="text-gray-700">
+            This is meant for business to business communication only and is
+            subject to review and approval by the Correspondent&apos;s
+            Compliance Department.
+          </p>
+        </div>
+
           {/* <div className="m-2 p-2 gap-4">
             <a href="/products-programs/Basic-Product-Flow.pdf/" target="_blank">
               <Image

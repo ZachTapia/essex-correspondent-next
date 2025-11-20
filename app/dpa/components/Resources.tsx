@@ -109,17 +109,7 @@ const Resources = () => {
           </a>
         </div>
 
-        <div className="m-2 p-2 gap-4">
-          {/* <p className="text-red-700 pb-4">
-            * Adobe Acrobat Pro must be used to add custome images and logos to
-            fillable flyers
-          </p> */}
-          <p className="text-gray-700">
-            This is meant for business to business communication only and is
-            subject to review and approval by the Correspondent&apos;s
-            Compliance Department.
-          </p>
-        </div>
+        
       </section>
       </section>
       <section className="w-full bg-gray-200 h-[60px] sm:h-[70px] md:h-[90px] [clip-path:polygon(0_0,100%_0,50%_100%)]"></section>

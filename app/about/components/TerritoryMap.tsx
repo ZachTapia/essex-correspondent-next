@@ -9,7 +9,7 @@ const TerritoryMap = () => {
           <div className="m-4 p-4 justify-items-center">
             <Image
           src={image1}
-          width={700}
+          width={1100}
           height={100}
           alt="Executive territory map"
           className="pt-4"

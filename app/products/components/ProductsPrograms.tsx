@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import image1 from "../../../public/products-programs/dpa.svg";
 import image2 from "../../../public/products-programs/govt-ent.svg";
-import image3 from "../../../public/products-programs/product-flow.svg"
+import image4 from "../../../public/products-programs/Fillable.svg";
 
 const ProductsPrograms = () => {
   return (
@@ -41,6 +41,21 @@ const ProductsPrograms = () => {
           </div>
 
           <div className="m-2 p-2 gap-4">
+          <a
+            href="/dpa/resources_down_payment_fillable.pdf"
+            target="_blank"
+          >
+            <Image
+              src={image4}
+              width={800}
+              height={100}
+              alt="Nationwide Down Payment Options (Fillable) document pdf"
+              className="pt-4"
+            />
+          </a>
+        </div>
+
+          {/* <div className="m-2 p-2 gap-4">
             <a href="/products-programs/Basic-Product-Flow.pdf/" target="_blank">
               <Image
                 src={image3}
@@ -50,7 +65,7 @@ const ProductsPrograms = () => {
                 className="pt-4"
               />
             </a>
-          </div>
+          </div> */}
         </section>
       </section>
     </>

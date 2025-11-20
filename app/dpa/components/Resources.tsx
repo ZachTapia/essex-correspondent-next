@@ -2,7 +2,7 @@ import Image from "next/image";
 import image1 from "../../../public/dpa/AMORTIZED-AllStates.svg";
 import image2 from "../../../public/dpa/AMORTIZED-Washington.svg";
 import image3 from "../../../public/dpa/FORGIVEABLE-AllStates.svg";
-import image4 from "../../../public/dpa/fillable.svg";
+// import image4 from "../../../public/dpa/fillable.svg";
 import image5 from "../../../public/dpa/FAQ.svg";
 import image6 from "../../../public/dpa/options.svg";
 
@@ -51,7 +51,7 @@ const Resources = () => {
 
         <div className="m-2 p-2 gap-4">
           <a
-            href="/dpa/ESSEX-NHF-TERM-FORGIVABLE-not-NY-WA.pdf"
+            href="/dpa/resources_forgivable_all_states.pdf"
             target="_blank"
           >
             <Image
@@ -64,7 +64,7 @@ const Resources = () => {
           </a>
         </div>
 
-        <div className="m-2 p-2 gap-4">
+        {/* <div className="m-2 p-2 gap-4">
           <a
             href="/dpa/resources_down_payment_fillable.pdf"
             target="_blank"
@@ -77,7 +77,7 @@ const Resources = () => {
               className="pt-4"
             />
           </a>
-        </div>
+        </div> */}
 
         <div className="m-2 p-2 gap-4">
           <a

@@ -96,7 +96,7 @@ const Resources = () => {
 
         <div className="m-2 p-2 gap-4">
           <a
-            href="/dpa/resources_down_payment.pdf"
+            href="/dpa/DPA-Options_10-14-2025.pdf"
             target="_blank"
           >
             <Image

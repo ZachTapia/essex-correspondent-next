@@ -3,7 +3,7 @@ import image1 from "../../../public/about-page/TMAP.svg"
 
 const TerritoryMap = () => {
     return (
-        <section className="w-full h-full bg-white mx-auto max-w-screen-lg flex flex-col pl-4 pr-4 pt-8">
+        <section className="w-full h-full bg-white mx-auto max-w-5xl flex flex-col pl-4 pr-4 pt-8">
             <h1 className="text-blue-950 text-center text-4xl font-light ">Account Executive Sales Territory Map</h1>
             <hr className="w-40 h-1.5 mx-auto bg-gray-100 border-0 my-4 dark:bg-blue-950"></hr>
           <div className="m-4 p-4 justify-items-center">

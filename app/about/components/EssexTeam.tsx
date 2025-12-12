@@ -12,7 +12,7 @@ const EssexTeam = () => {
   return (
     <>
       <section className="bg-gray-200">
-        <section className="w-full h-full bg-gray-200 mx-auto max-w-screen-lg flex flex-col pl-4 pr-4 pt-6">
+        <section className="w-full h-full bg-gray-200 mx-auto max-w-5xl flex flex-col pl-4 pr-4 pt-6">
           <h1 className="text-blue-950 text-center text-4xl font-light ">
           The Essex Team
           </h1>
@@ -29,7 +29,7 @@ const EssexTeam = () => {
           </p>
         </section>
 
-        <section className="grid h-full w-full grid-cols-1 p-2 text-black md:grid-cols-2 max-w-screen-lg mx-auto">
+        <section className="grid h-full w-full grid-cols-1 p-2 text-black md:grid-cols-2 max-w-5xl mx-auto">
           <div className="m-2 flex max-sm:flex-col max-sm:items-center items-start gap-4">
             <Image
               src={image1}
@@ -76,7 +76,7 @@ const EssexTeam = () => {
           </div>
         </section>
 
-        <section className=" grid h-full w-full grid-cols-1 p-2 text-black md:grid-cols-3 max-w-screen-lg mx-auto text-center">
+        <section className=" grid h-full w-full grid-cols-1 p-2 text-black md:grid-cols-3 max-w-5xl mx-auto text-center">
           <div className="m-2 p-2 items-start gap-4 justify-items-center">
             <Image
               src={image4}

@@ -8,14 +8,14 @@ const ProductsPrograms = () => {
   return (
     <>
       <section className="bg-white pb-4">
-        <section className="w-full h-full bg-white mx-auto max-w-screen-lg flex flex-col p-4 pt-10 max-sm:pt-10">
+        <section className="w-full h-full bg-white mx-auto max-w-5xl flex flex-col p-4 pt-10 max-sm:pt-10">
           <h1 className="text-blue-950 text-center text-4xl font-light ">
             Products and Programs
           </h1>
           <hr className="w-40 h-1.5 mx-auto bg-white border-0 my-4 dark:bg-blue-950"></hr>
         </section>
 
-        <section className="grid h-full w-full grid-cols-1 p-2 justify-items-center text-black md:grid-cols-2 max-w-screen-lg mx-auto">
+        <section className="grid h-full w-full grid-cols-1 p-2 justify-items-center text-black md:grid-cols-2 max-w-5xl mx-auto">
           <div className="m-2 p-2 gap-4">
             <Link href="/dpa" target="_blank">
               <Image

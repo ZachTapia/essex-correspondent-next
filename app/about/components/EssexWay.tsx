@@ -5,7 +5,7 @@ const EssexWay = () => {
   return (
     <>
     <section className="bg-white">
-      <section className="w-full h-full bg-white mx-auto max-w-screen-lg flex flex-col pl-4 pr-4 pt-4">
+      <section className="w-full h-full bg-white mx-auto max-w-5xl flex flex-col pl-4 pr-4 pt-4">
         <h1 className="text-blue-950 text-center text-4xl font-light ">
           The Essex Way
         </h1>
@@ -18,7 +18,7 @@ const EssexWay = () => {
         </h2>
       </section>
 
-      <section className=" grid h-full w-full grid-cols-1 bg-white p-2 text-black md:grid-cols-2 max-w-screen-lg mx-auto">
+      <section className=" grid h-full w-full grid-cols-1 bg-white p-2 text-black md:grid-cols-2 max-w-5xl mx-auto">
         <div className=" pb-4 max-sm:pt-0 justify-items-center">
           <Image
             src={image3}

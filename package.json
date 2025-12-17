@@ -18,7 +18,7 @@
     "es-set-tostringtag": "^2.1.0",
     "hasown": "^2.0.2",
     "mime-types": "^3.0.1",
-    "next": "15.2.2",
+    "next": "^15.5.9",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.55.0"

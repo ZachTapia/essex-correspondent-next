@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import image1 from "../../../public/products-programs/dpa.svg";
-import image2 from "../../../public/products-programs/govt-ent.svg";
 import image4 from "../../../public/products-programs/Fillable.svg";
 
 const ProductsPrograms = () => {
@@ -28,7 +27,7 @@ const ProductsPrograms = () => {
             </Link>
           </div>
 
-          <div className="m-2 p-2 gap-4">
+          {/* <div className="m-2 p-2 gap-4">
             <a href="/link-loan" target="_blank">
               <Image
                 src={image2}
@@ -38,7 +37,7 @@ const ProductsPrograms = () => {
                 className="pt-4"
               />
             </a>
-          </div>
+          </div> */}
 
           <div className="m-2 p-2 gap-4">
           <a

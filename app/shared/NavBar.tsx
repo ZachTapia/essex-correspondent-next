@@ -128,7 +128,7 @@ export default function NavBar() {
                     </Link>
                   </li>
                   <li>
-                    <Link
+                    {/* <Link
                       href="/link-loan"
                       className={`block text-center hover:text-gray-600 ${
                         pathname === "/link-loan"
@@ -137,7 +137,7 @@ export default function NavBar() {
                       }`}
                     >
                       Trio Link Loan
-                    </Link>
+                    </Link> */}
                   </li>
                 </ul>
               </li>
@@ -218,7 +218,7 @@ export default function NavBar() {
                           Down Payment Assistance
                         </Link>
                       </li>
-                      <li className="text-lg">
+                      {/* <li className="text-lg">
                         <Link
                           href="/link-loan"
                           className={`block text-center px-4 py-2 hover:bg-gray-100 ${
@@ -229,7 +229,7 @@ export default function NavBar() {
                         >
                           Trio Link Loan
                         </Link>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                 </div>

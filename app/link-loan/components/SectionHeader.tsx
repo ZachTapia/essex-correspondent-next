@@ -1,20 +1,20 @@
-import Image from "next/image";
-import image1 from "../../../public/link-loan/Link-loan-header.svg";
+// import Image from "next/image";
+// import image1 from "../../../public/link-loan/Link-loan-header.svg";
 
-const SectionHeader = () => {
-  return (
-    <section className="h-full w-full bg-white">
+// const SectionHeader = () => {
+//   return (
+//     <section className="h-full w-full bg-white">
 
-        <div>
-          <Image
-          src={image1}
-          alt="Essex Link Loan"
-          width={3000}
-           />
-          </div>
+//         <div>
+//           <Image
+//           src={image1}
+//           alt="Essex Link Loan"
+//           width={3000}
+//            />
+//           </div>
 
-    </section>
-  );
-};
+//     </section>
+//   );
+// };
 
-export default SectionHeader;
+// export default SectionHeader;

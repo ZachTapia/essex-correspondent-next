@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
       <footer className="bg-blue-950 p-6">
-        <section className="grid h-full mx-auto max-w-screen-lg w-full grid-cols-1 bg-blue-950 p-2 text-black md:grid-cols-3">
+        <section className="grid h-full mx-auto max-w-5xl w-full grid-cols-1 bg-blue-950 p-2 text-black md:grid-cols-3">
           <div className="m-4 max-sm:m-2 bg-blue-950 p-6 justify-items-center">
             <Image
               src={image1}

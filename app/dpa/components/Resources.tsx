@@ -96,7 +96,7 @@ const Resources = () => {
 
         <div className="m-2 p-2 gap-4">
           <a
-            href="/dpa/DPA-Options_10-14-2025.pdf"
+            href="/dpa/Essex_DPA_Options_10-14-2025.pdf"
             target="_blank"
           >
             <Image
@@ -112,7 +112,7 @@ const Resources = () => {
         
       </section>
       </section>
-      <section className="w-full bg-gray-200 h-[60px] sm:h-[70px] md:h-[90px] [clip-path:polygon(0_0,100%_0,50%_100%)]"></section>
+      <section className="w-full bg-gray-200 h-15 sm:h-17.5 md:h-22.5 [clip-path:polygon(0_0,100%_0,50%_100%)]"></section>
     </>
   );
 };

@@ -5,7 +5,7 @@ const Features = () => {
   return (
     <>
     <section className="bg-white pt-4 pb-8">
-      <section className=" grid h-full w-full grid-cols-1 bg-white text-black md:grid-cols-2 max-w-screen-lg mx-auto">
+      <section className=" grid h-full w-full grid-cols-1 bg-white text-black md:grid-cols-2 max-w-5xl mx-auto">
         <div>
           <Image
             src={image1}

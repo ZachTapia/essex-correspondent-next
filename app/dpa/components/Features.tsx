@@ -24,7 +24,7 @@ const Features = () => {
               - Up to 101.5% Financing - 1st FHA 96.5% loan plus DPA 2nd loan for 3.5% or 5%
             </li>
             <li className="font-extralight text-lg flex items-center gap-2">
-              - Two options for the 2nd - 0% interest rate forgivable for 3 years, 5 years or amortized for 10 years
+              - Two options for the 2nd - 0% interest rate forgivable for 3 years or amortized for 10 years
             </li>
             <li className="font-extralight text-lg flex items-center gap-2">
               - No first time homebuyer requirements

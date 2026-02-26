@@ -18,7 +18,7 @@ const ResourcePage = () => {
             <ThingsToKnow />
             <MarketingMaterials />
             <ResourceDocs />
-            <AccessTraining />
+            {/* <AccessTraining /> */}
             <EssexDifference />
       
 

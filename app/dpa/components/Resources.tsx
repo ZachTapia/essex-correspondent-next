@@ -51,7 +51,7 @@ const Resources = () => {
 
         <div className="m-2 p-2 gap-4">
           <a
-            href="/dpa/DPA_Correspondent Forgivable_Deferred_Program_2.25.2026.pdf"
+            href="/dpa/DPA-Correspondent-3-Year-Forgivable_3.2.2026.pdf"
             target="_blank"
           >
             <Image

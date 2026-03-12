@@ -38,7 +38,7 @@ const ResourceDocs = () => {
             </a>
           </div>
 
-          <div className="m-2 p-2 gap-4">
+          {/* <div className="m-2 p-2 gap-4">
           <a href="/resources/DPASalesLoanOfficerTrainingDeck11-12-2025.pdf" target="_blank">
             <Image
               src={image3}
@@ -48,7 +48,7 @@ const ResourceDocs = () => {
               className="pt-4"
             />
             </a>
-          </div>
+          </div> */}
 
           <div className=" pt-2 gap-4 text-gray-400">
             <h1>

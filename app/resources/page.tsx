@@ -1,6 +1,6 @@
 import Footer from "../shared/Footer";
 import NavBar from "../shared/NavBar";
-import AccessTraining from "./components/AccessTraining";
+// import AccessTraining from "./components/AccessTraining";
 import EssexDifference from "./components/EssexDifference";
 import MarketingMaterials from "./components/MarketingMaterials";
 import ResourceDocs from "./components/ResourceDocs";

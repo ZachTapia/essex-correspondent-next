@@ -1,7 +1,7 @@
 import Image from "next/image";
 import image1 from "../../../public/resources/becoming-approved.svg";
 import image2 from "../../../public/resources/NDP-options.svg";
-import image3 from "../../../public/resources/dpa-training-presentation.svg"
+// import image3 from "../../../public/resources/dpa-training-presentation.svg"
 
 const ResourceDocs = () => {
     return (

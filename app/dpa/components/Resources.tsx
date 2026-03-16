@@ -35,7 +35,7 @@ const Resources = () => {
 
         <div className="m-2 p-2 gap-4">
           <a
-            href="/dpa/resources_amortized_washington_state.pdf"
+            href="/dpa/Term_Sheet_Washington_State_03.16.26.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >

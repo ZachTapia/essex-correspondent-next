@@ -1,14 +1,14 @@
 const MarketingMaterials = () => {
   return (
     <>
-      <section className="w-full h-full bg-white mx-auto max-w-screen-lg flex flex-col pt-10 max-sm:pt-10">
+      <section className="w-full h-full bg-white mx-auto max-w-5xl flex flex-col pt-10 max-sm:pt-10">
         <h1 className="text-blue-950 text-center text-4xl font-light ">
           Marketing Materials
         </h1>
         <hr className="w-40 h-1.5 mx-auto bg-gray-100 border-0 my-4 dark:bg-blue-950"></hr>
       </section>
 
-      <section className="flex flex-col items-center justify-center text-black max-w-screen-lg mx-auto p-4 text-center">
+      <section className="flex flex-col items-center justify-center text-black max-w-5xl mx-auto p-4 text-center">
         <h1 className="text-blue-950">
           Download our latest marketing materials and resources
         </h1>

@@ -1,7 +1,7 @@
 
 const ThingsToKnow = () => {
     return (
-        <section className="w-full h-full bg-white mx-auto max-w-screen-lg flex flex-col pl-4 pr-4 pt-4">
+        <section className="w-full h-full bg-white mx-auto max-w-5xl flex flex-col pl-4 pr-4 pt-4">
             <h1 className="text-blue-950 text-center text-4xl font-light ">Things To Know</h1>
             <hr className="w-40 h-1.5 mx-auto bg-gray-100 border-0 my-4 dark:bg-blue-950"></hr>
             <p className="text-black text-center text-lg pb-6">

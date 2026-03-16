@@ -5,6 +5,7 @@ import Features from "./components/Features";
 import Resources from "./components/Resources";
 import SectionHeader from "./components/SectionHeader";
 import ThingsToKnow from "./components/ThingsToKnow";
+import Training from "./components/Training";
 
 
 
@@ -17,6 +18,7 @@ const ProductsPage = () => {
            <Features />
            <Resources />
            <ThingsToKnow />
+           <Training />
            <EssexDif />
 
         </main>

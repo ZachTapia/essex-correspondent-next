@@ -108,38 +108,16 @@ export default function NavBar() {
                 </li>
               ))}
 
-              <li
-                className={`text-lg font-medium ${
-                  pathname === "/dpa" || pathname === "/link-loan"
+<li
+                className={`flex items-center p-1 text-lg font-medium gap-x-2 hover:text-gray-300 ${
+                  pathname === "/contact"
                     ? "text-gray-300 font-bold"
                     : "text-black"
                 }`}
               >
-                <span className="block mb-1 font-medium">PRODUCTS</span>
-                <ul className="ml-4">
-                  <li className="mb-1 pb-4">
-                    <Link
-                      href="/dpa"
-                      className={`block text-center hover:text-gray-600 ${
-                        pathname === "/dpa" ? "text-gray-300 font-bold" : ""
-                      }`}
-                    >
-                      Down Payment Assistance
-                    </Link>
-                  </li>
-                  <li>
-                    {/* <Link
-                      href="/link-loan"
-                      className={`block text-center hover:text-gray-600 ${
-                        pathname === "/link-loan"
-                          ? "text-gray-300 font-bold"
-                          : ""
-                      }`}
-                    >
-                      Trio Link Loan
-                    </Link> */}
-                  </li>
-                </ul>
+                <Link href="/dpa" className="flex items-center">
+                  DPA
+                </Link>
               </li>
 
               <li
@@ -194,46 +172,18 @@ export default function NavBar() {
                 </li>
               ))}
 
-              <li>
-                <div className="group relative text-black">
-                  <span
-                    className={`cursor-pointer flex items-center text-lg font-medium gap-x-2 hover:text-gray-300 ${
-                      pathname === "/dpa" || pathname === "/link-loan" ? "text-gray-300 font-bold"
-                        : "text-black"
-                    }`}
-                  >
-                    <Link href="/products" className="flex items-center">
-                      PRODUCTS
-                    </Link>
-                  </span>
-                  <div className="absolute top-full left-1/2 -translate-x-1/2 hidden group-hover:block bg-white shadow-lg min-w-62.5 z-50">
-                    <ul className="flex flex-col pt-2">
-                      <li className="text-lg">
-                        <Link
-                          href="/dpa"
-                          className={`block text-center px-4 py-2 hover:bg-gray-100 ${
-                            pathname === "/dpa" ? "bg-gray-100 font-bold" : ""
-                          }`}
-                        >
-                          Down Payment Assistance
-                        </Link>
-                      </li>
-                      {/* <li className="text-lg">
-                        <Link
-                          href="/link-loan"
-                          className={`block text-center px-4 py-2 hover:bg-gray-100 ${
-                            pathname === "/link-loan"
-                              ? "bg-gray-100 font-bold"
-                              : ""
-                          }`}
-                        >
-                          Trio Link Loan
-                        </Link>
-                      </li> */}
-                    </ul>
-                  </div>
-                </div>
+              <li
+                className={`flex items-center p-1 text-lg font-medium gap-x-2 hover:text-gray-300 ${
+                  pathname === "/contact"
+                    ? "text-gray-300 font-bold"
+                    : "text-black"
+                }`}
+              >
+                <Link href="/dpa" className="flex items-center">
+                  DPA
+                </Link>
               </li>
+
 
               <li
                 className={`flex items-center p-1 text-lg font-medium gap-x-2 hover:text-gray-300 ${

@@ -4,7 +4,7 @@ import image1 from "../../../public/resources/essex-difference.svg";
 const EssexDifference = () => {
     return (
 
-        <section className="h-full w-full bg-white pt-24 mx-auto max-sm:pt-8">
+        <section className="h-full w-full bg-white pt-12 mx-auto max-sm:pt-8">
 
         <div>
         <a href="/about" target="_blank">

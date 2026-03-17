@@ -23,7 +23,7 @@ const Training = () => {
         </div>{" "}
         <p className="text-gray-600 text-center text-lg pb-6">
           {" "}
-          2026 NATIONAL DPA PREOGRAM WEBINAR{" "}
+          2026 NATIONAL DPA PROGRAM WEBINAR{" "}
         </p>{" "}
       </section>
     </>

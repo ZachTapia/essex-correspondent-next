@@ -35,7 +35,7 @@ const Resources = () => {
 
         <div className="m-2 p-2 gap-4">
           <a
-            href="/dpa/TermSheet-Washington-State-3.5-Master.pdf"
+            href="/dpa/Term_Sheet_DPA_Washington_State_04_03_26.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >

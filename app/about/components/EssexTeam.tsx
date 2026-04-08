@@ -3,7 +3,7 @@ import image1 from "../../../public/about-page/_r_weedon.png";
 import image2 from "../../../public/about-page/_d_nichols.png";
 import image3 from "../../../public/about-page/_d_vance.png";
 import image4 from "../../../public/about-page/_m_walker.png";
-import image5 from "../../../public/about-page/_s_endresen.png";
+import image5 from "../../../public/about-page/shirley-headshot.jpeg";
 import image6 from "../../../public/about-page/_c_howley.png";
 import image7 from "../../../public/about-page/_c_nager.png";
 import image8 from "../../../public/about-page/_d_sears.png";
@@ -210,7 +210,7 @@ const EssexTeam = () => {
           </div>
         </section>
       </section>
-       <section className="w-full bg-gray-200 h-[60px] sm:h-[70px] md:h-[90px] [clip-path:polygon(0_0,100%_0,50%_100%)]"></section>
+       <section className="w-full bg-gray-200 h-15 sm:h-17.5 md:h-22.5 [clip-path:polygon(0_0,100%_0,50%_100%)]"></section>
     </>
   );
 };

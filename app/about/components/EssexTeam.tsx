@@ -1,6 +1,6 @@
 import Image from "next/image";
 import image1 from "../../../public/about-page/_r_weedon.png";
-import image2 from "../../../public/about-page/_d_nichols.png";
+import image2 from "../../../public/about-page/_d_nichols.jpeg";
 import image3 from "../../../public/about-page/_d_vance.png";
 import image4 from "../../../public/about-page/_m_walker.png";
 import image5 from "../../../public/about-page/shirley-headshot.jpeg";
@@ -55,7 +55,7 @@ const EssexTeam = () => {
           <div className="m-2 flex max-sm:flex-col max-sm:items-center items-start gap-4">
             <Image
               src={image2}
-              width={250}
+              width={175}
               height={100}
               alt="Image of Diane"
               className="pt-4"

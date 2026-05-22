@@ -40,7 +40,7 @@ const ResourceDocs = () => {
           </div>
 
           <div className="m-2 p-2 gap-4">
-          <a href="/resources/Essex_DPA_Sales_Deck_03-19-2026.pdf" target="_blank">
+          <a href="/resources/Essex_Deck_05-11-2026.pdf" target="_blank">
             <Image
               src={image3}
               width={800}

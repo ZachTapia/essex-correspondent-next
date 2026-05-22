@@ -10,6 +10,17 @@ const ThingsToKnow = () => {
           <p className="text-black text-center text-lg">
           As we move into this year, we remain fully dedicated to this program and its power to drive production, meet CRA requirements, and expand access to homeownership—even in a high-rate environment. All roads lead to Essex when it comes to delivering results with speed, reliability, and long-term success.
           </p>
+
+          <div className="text-center pt-10">
+          <a
+            href="/resources/Essex_Deck_05-11-2026.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-4 bg-blue-950 text-white hover:bg-gray-600 transition"
+          >
+            Download Essex DPA Sales Deck
+          </a>
+          </div>
         </section>
     )
 }

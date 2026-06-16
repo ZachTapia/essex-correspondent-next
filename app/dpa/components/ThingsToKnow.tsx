@@ -13,7 +13,7 @@ const ThingsToKnow = () => {
 
           <div className="text-center pt-10">
           <a
-            href="/resources/Essex_Deck_05-11-2026.pdf"
+            href="/resources/Essex_DPA_Sales_Deck06-15-2026.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-4 bg-blue-950 text-white hover:bg-gray-600 transition"

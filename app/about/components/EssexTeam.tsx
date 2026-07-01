@@ -101,28 +101,6 @@ const EssexTeam = () => {
 
           <div className="m-2 p-2 items-start gap-4 justify-items-center">
             <Image
-              src={image3}
-              width={175}
-              height={100}
-              alt="Image of Duncan"
-              className="pt-4"
-            />
-            <h1 className=" text-lg font-light text-blue-950 pt-2">
-              <span className="font-bold">DUNCAN</span> VANCE
-            </h1>
-            <p className=" font-light text-sm text-gray-800">
-              National Account Executive
-            </p>
-            <p className="font-light text-sm text-gray-800 pt-4">
-              248.259.5600
-            </p>
-            <p className="font-light text-sm text-gray-800">
-              dvance@essexmortgage.com
-            </p>
-          </div>
-
-          <div className="m-2 p-2 items-start gap-4 justify-items-center">
-            <Image
               src={image5}
               width={175}
               height={100}

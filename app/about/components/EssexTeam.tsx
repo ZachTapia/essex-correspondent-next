@@ -1,7 +1,6 @@
 import Image from "next/image";
 import image1 from "../../../public/about-page/_r_weedon.png";
 import image2 from "../../../public/about-page/_d_nichols.jpeg";
-import image3 from "../../../public/about-page/_d_vance.png";
 import image4 from "../../../public/about-page/_m_walker.png";
 import image5 from "../../../public/about-page/shirley-headshot.jpeg";
 import image6 from "../../../public/about-page/_c_howley.png";

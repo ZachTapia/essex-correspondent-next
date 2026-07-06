@@ -2,7 +2,7 @@ import Image from "next/image";
 import image1 from "../../../public/resources/becoming-approved.svg";
 import image2 from "../../../public/resources/NDP-options.svg";
 import image3 from "../../../public/resources/dpa-training-presentation.svg"
-import image4 from "../../../public/resources/spreadsheet-example.svg"
+// import image4 from "../../../public/resources/spreadsheet-example.svg"
 
 const ResourceDocs = () => {
     return (
@@ -51,7 +51,7 @@ const ResourceDocs = () => {
             </a>
           </div>
 
-          <div className="m-2 p-2 gap-4">
+          {/* <div className="m-2 p-2 gap-4">
           <a href="/resources/Essex-Final-Doc-Transmittal-DB.xlsx" target="_blank">
             <Image
               src={image4}
@@ -61,7 +61,7 @@ const ResourceDocs = () => {
               className="pt-4"
             />
             </a>
-          </div>
+          </div> */}
 
           <div className=" pt-2 gap-4 text-gray-400">
             <h1>

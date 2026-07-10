@@ -14,31 +14,30 @@ const MarketingMaterials = () => {
         </h1>
 
         <div className="grid grid-cols-3 gap-4 pt-6 text-center">
-          <a
-            href="/resources/resources_close_more_deals.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-4 bg-blue-950 text-white hover:bg-gray-600 transition"
-          >
+          <a href="/resources/resources_close_more_deals.pdf" target="_blank" rel="noopener noreferrer" className="px-6 py-4 bg-blue-950 text-white hover:bg-gray-600 transition">
             Close More Deals
           </a>
 
-          <a
-            href="/resources/resources_reach_more_borrowers.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-4 bg-blue-950 text-white hover:bg-gray-600 transition"
-          >
+          <a href="/resources/resources_reach_more_borrowers.pdf" target="_blank" rel="noopener noreferrer" className="px-6 py-4 bg-blue-950 text-white hover:bg-gray-600 transition">
             Reach More Borrowers
           </a>
 
-          <a
-            href="/resources/resources_partner_with_us.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-4 bg-blue-950 text-white hover:bg-gray-600 transition"
-          >
+          <a href="/resources/resources_partner_with_us.pdf" target="_blank" rel="noopener noreferrer" className="px-6 py-4 bg-blue-950 text-white hover:bg-gray-600 transition">
             Partner With Us
+          </a>
+        </div>
+
+        <div className="grid grid-cols-3 gap-4 pt-4 text-center">
+          <a href="/resources/close-more-deals-esp-dpa.pdf" target="_blank" rel="noopener noreferrer" className="px-6 py-4 bg-blue-950 text-white hover:bg-gray-600 transition">
+            Cierre Más Tratos
+          </a>
+
+          <a href="/resources/reach-more-borrowers-esp-dpa.pdf" target="_blank" rel="noopener noreferrer" className="px-6 py-4 bg-blue-950 text-white hover:bg-gray-600 transition">
+            Llegue a Más Prestatarios
+          </a>
+
+          <a href="/resources/esp-partner-with-us-dpa.pdf" target="_blank" rel="noopener noreferrer" className="px-6 py-4 bg-blue-950 text-white hover:bg-gray-600 transition">
+            Asóciese con Nosotros
           </a>
         </div>
       </section>

@@ -2,7 +2,6 @@ import Image from "next/image";
 import image1 from "../../../public/resources/becoming-approved.svg";
 import image2 from "../../../public/resources/NDP-options.svg";
 import image3 from "../../../public/resources/dpa-training-presentation.svg"
-// import image4 from "../../../public/resources/spreadsheet-example.svg"
 
 const ResourceDocs = () => {
     return (
@@ -15,7 +14,7 @@ const ResourceDocs = () => {
       </section>
 
       <section className="grid h-full w-full grid-cols-1 p-2 justify-items-center text-black md:grid-cols-2 max-w-5xl mx-auto">
-          <div className="m-2 p-2 gap-4">
+          <div className="m-2 p-2 gap-4 flex flex-col items-center">
             <a href="/resources/Essex_Correspondent Application_Requirements.pdf/" target="_blank">
             <Image
               src={image1}
@@ -27,7 +26,7 @@ const ResourceDocs = () => {
             </a>
           </div>
 
-          <div className="m-2 p-2 gap-4">
+          <div className="m-2 p-2 gap-4 flex flex-col items-center">
           <a href="/resources/Essex_DPA_Options_2026.pdf" target="_blank">
             <Image
               src={image2}
@@ -39,7 +38,7 @@ const ResourceDocs = () => {
             </a>
           </div>
 
-          <div className="m-2 p-2 gap-4">
+          <div className="m-2 p-2 gap-4 flex flex-col items-center">
           <a href="/resources/Essex_DPA_Sales_Deck06-15-2026.pdf" target="_blank">
             <Image
               src={image3}
@@ -50,18 +49,6 @@ const ResourceDocs = () => {
             />
             </a>
           </div>
-
-          {/* <div className="m-2 p-2 gap-4">
-          <a href="/resources/Essex-Final-Doc-Transmittal-DB.xlsx" target="_blank">
-            <Image
-              src={image4}
-              width={800}
-              height={100}
-              alt="Final Doc Transmittal Example"
-              className="pt-4"
-            />
-            </a>
-          </div> */}
 
           <div className=" pt-2 gap-4 text-gray-400">
             <h1>

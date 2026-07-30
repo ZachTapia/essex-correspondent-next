@@ -20,7 +20,7 @@ const Resources = () => {
       <section className="grid h-full w-full grid-cols-1 p-2 bg-gray-200 justify-items-center text-black md:grid-cols-2 max-w-5xl mx-auto">
         <div className="m-2 p-2 gap-4">
           <a
-            href="/dpa/resources_amortized_all_states.pdf"
+            href="/resources/EssexNHF_DPA_Term_Sheet_Amoritized_7.28.26.pdf"
             target="_blank"
           >
             <Image
@@ -51,7 +51,7 @@ const Resources = () => {
 
         <div className="m-2 p-2 gap-4">
           <a
-            href="/dpa/DPA-Correspondent-3-Year-Forgivable_3.2.2026.pdf"
+            href="/resources/ESSEX_ NHF_TERM_SHEET_3_YEAR_FORGIVABLE_7.28.2026 .pdf"
             target="_blank"
           >
             <Image

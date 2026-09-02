@@ -1,6 +1,5 @@
 import type { CSSProperties } from "react";
 import type { Metadata } from "next";
-import Link from "next/link";
 import NavBar from "../shared/NavBar";
 import Footer from "../shared/Footer";
 

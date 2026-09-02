@@ -94,24 +94,6 @@ function DocumentIcon({ color }: { color: string }) {
 }
 
 
-// ---------------------------------------------------------------------------
-// Shared style objects (kept inline, not Tailwind classes, per request)
-// ---------------------------------------------------------------------------
-const navLinkStyle: CSSProperties = {
-  fontSize: 14,
-  fontWeight: 500,
-  letterSpacing: "0.03em",
-  color: "#1b1b1f",
-  textDecoration: "none",
-};
-
-const navLinkActiveStyle: CSSProperties = {
-  ...navLinkStyle,
-  fontWeight: 700,
-  color: NAVY,
-};
-
-
 function BulletinCard({ bulletin }: { bulletin: Bulletin }) {
   const accent = bulletin.placeholder ? NAVY_MUTED : NAVY;
   const titleColor = bulletin.placeholder ? "#6b7280" : NAVY;

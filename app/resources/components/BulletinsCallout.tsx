@@ -1,20 +1,3 @@
-import Link from "next/link";
-
-// ---------------------------------------------------------------------------
-// A compact section for the Resources page that points to the new
-// Correspondent Lending Bulletins page. Styled to match the existing
-// "Marketing Materials" section on /resources: centered eyebrow-free
-// heading, short navy divider rule, one line of supporting copy, single
-// primary action.
-//
-// Suggested placement: drop this in app/resources/page.tsx, either right
-// after the "Marketing Materials" section or right after the "Things To
-// Know" hero — wherever bulletins should sit in the page's reading order.
-//
-//   import BulletinsCallout from "./BulletinsCallout";
-//   ...
-//   <BulletinsCallout />
-// ---------------------------------------------------------------------------
 
 const BulletinsCallout = () => {
   return (

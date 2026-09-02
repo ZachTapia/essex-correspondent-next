@@ -1,6 +1,7 @@
 import Training from "../dpa/components/Training";
 import Footer from "../shared/Footer";
 import NavBar from "../shared/NavBar";
+import BulletinsCallout from "./components/BulletinsCallout";
 import EssexDifference from "./components/EssexDifference";
 import MarketingMaterials from "./components/MarketingMaterials";
 import ResourceDocs from "./components/ResourceDocs";
@@ -17,6 +18,7 @@ const ResourcePage = () => {
             <SectionHeader />
             <ThingsToKnow />
             <MarketingMaterials />
+            <BulletinsCallout />
             <ResourceDocs />
             <Training />
             <EssexDifference />

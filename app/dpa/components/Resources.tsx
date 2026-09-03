@@ -96,7 +96,7 @@ const Resources = () => {
 
         <div className="m-2 p-2 gap-4">
           <a
-            href="/resources/Essex_DPA_Options_2026.pdf"
+            href="/resources/EssexDPAOptions2026.pdf"
             target="_blank"
           >
             <Image

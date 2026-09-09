@@ -81,7 +81,7 @@ const Resources = () => {
 
         <div className="m-2 p-2 gap-4">
           <a
-            href="/dpa/resources_dpa_faq.pdf"
+            href="/dpa/DPA-FAQs.pdf"
             target="_blank"
           >
             <Image
@@ -96,7 +96,7 @@ const Resources = () => {
 
         <div className="m-2 p-2 gap-4">
           <a
-            href="/resources/EssexDPAOptions2026.pdf"
+            href="/resources/EssexDPA-Options.pdf"
             target="_blank"
           >
             <Image

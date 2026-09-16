@@ -9,7 +9,7 @@ const Training = () => {
         <div className="m-2 p-2 gap-4">
           {" "}
           <a
-            href="https://drive.google.com/file/d/1EnQW7Y8kMxsVz7OMZc0SISZ15G1Sk47G/view?usp=sharing"
+            href="https://drive.google.com/file/d/16i-ixkGdEXuWfyZ8kdi7J-bi2HWMWOt2/view?usp=sharing"
             target="_blank"
           >
             <Image

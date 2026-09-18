@@ -2,6 +2,7 @@ import Image from "next/image";
 import image1 from "../../../public/dpa/AMORTIZED-AllStates.svg";
 import image2 from "../../../public/dpa/AMORTIZED-Washington.svg";
 import image3 from "../../../public/dpa/FORGIVEABLE-AllStates.svg";
+import image4 from "../../../public/dpa/washingtonForgivable.svg"
 // import image4 from "../../../public/dpa/fillable.svg";
 import image5 from "../../../public/dpa/FAQ.svg";
 import image6 from "../../../public/dpa/options.svg";
@@ -56,6 +57,21 @@ const Resources = () => {
           >
             <Image
               src={image3}
+              width={800}
+              height={100}
+              alt="Forgivable WA State document link"
+              className="pt-4"
+            />
+          </a>
+        </div>
+
+        <div className="m-2 p-2 gap-4">
+          <a
+            href="/dpa/ESSEX_WA_Only3_YEAR_FORGIVABLE_TERM_SHEET.pdf"
+            target="_blank"
+          >
+            <Image
+              src={image4}
               width={800}
               height={100}
               alt="Forgivable All States except NY & WA document link"

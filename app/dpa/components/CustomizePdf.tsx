@@ -5,10 +5,12 @@ import {
   buildCustomizedPdf,
   downloadBytes,
   emptyProfile,
+  hasPhotoSlot,
   PageScope,
   prepareHeadshot,
   prepareLogo,
   Profile,
+  SlotPhoto,
 } from "../lib/customizePdf";
 
 const STORAGE_KEY = "dpa-pdf-profile";
@@ -51,6 +53,7 @@ type Props = {
 export function CustomizeDialog({ href, title, open, onClose }: Props) {
   const [profile, setProfile] = useState<Profile>(emptyProfile);
   const [scope, setScope] = useState<PageScope>("all");
+  const [slotPhoto, setSlotPhoto] = useState<SlotPhoto>("headshot");
   const [previewUrl, setPreviewUrl] = useState("");
   const [pageCount, setPageCount] = useState(0);
   const [error, setError] = useState("");
@@ -67,7 +70,7 @@ export function CustomizeDialog({ href, title, open, onClose }: Props) {
     let url = "";
     const timer = setTimeout(async () => {
       try {
-        const result = await buildCustomizedPdf(href, profile, scope);
+        const result = await buildCustomizedPdf(href, profile, { scope, slotPhoto });
         if (cancelled) return;
         url = URL.createObjectURL(new Blob([result.bytes as BlobPart], { type: "application/pdf" }));
         setPreviewUrl(url);
@@ -82,7 +85,7 @@ export function CustomizeDialog({ href, title, open, onClose }: Props) {
       clearTimeout(timer);
       if (url) URL.revokeObjectURL(url);
     };
-  }, [open, href, profile, scope]);
+  }, [open, href, profile, scope, slotPhoto]);
 
   const update = (next: Profile) => {
     setProfile(next);
@@ -92,7 +95,7 @@ export function CustomizeDialog({ href, title, open, onClose }: Props) {
   const download = async () => {
     setBusy(true);
     try {
-      const { bytes } = await buildCustomizedPdf(href, profile, scope);
+      const { bytes } = await buildCustomizedPdf(href, profile, { scope, slotPhoto });
       const base = href.split("/").pop()!.replace(/\.pdf$/i, "").trim();
       const who = profile.name.trim().replace(/[^a-z0-9]+/gi, "-");
       downloadBytes(bytes, `${base}${who ? `-${who}` : "-custom"}.pdf`);
@@ -156,6 +159,20 @@ export function CustomizeDialog({ href, title, open, onClose }: Props) {
                   <option value="all">Every page</option>
                   <option value="first">First page only</option>
                   <option value="last">Last page only</option>
+                </select>
+              </label>
+            )}
+
+            {hasPhotoSlot(href) && (
+              <label className="flex flex-col gap-1 text-sm">
+                <span className="text-gray-700">Photo in the flyer&apos;s circle</span>
+                <select
+                  value={slotPhoto}
+                  onChange={(e) => setSlotPhoto(e.target.value as SlotPhoto)}
+                  className="border border-gray-300 px-3 py-2 focus:border-blue-950 focus:outline-none"
+                >
+                  <option value="headshot">Headshot</option>
+                  <option value="logo">Brand logo</option>
                 </select>
               </label>
             )}

@@ -1,3 +1,5 @@
+import { CustomizeButton } from "./CustomizePdf";
+
 
 const ThingsToKnow = () => {
     return (
@@ -11,7 +13,7 @@ const ThingsToKnow = () => {
           As we move into this year, we remain fully dedicated to this program and its power to drive production, meet CRA requirements, and expand access to homeownership—even in a high-rate environment. All roads lead to Essex when it comes to delivering results with speed, reliability, and long-term success.
           </p>
 
-          <div className="text-center pt-10">
+          <div className="flex flex-wrap justify-center gap-4 pt-10">
           <a
             href="/resources/EssexDPASalesDeck09-15-2026.pdf"
             target="_blank"
@@ -20,6 +22,11 @@ const ThingsToKnow = () => {
           >
             Download Essex DPA Sales Deck
           </a>
+          <CustomizeButton
+            href="/resources/EssexDPASalesDeck09-15-2026.pdf"
+            title="Essex DPA Sales Deck"
+            className="px-6 py-4 border border-blue-950 text-blue-950 hover:bg-gray-100 transition"
+          />
           </div>
         </section>
     )

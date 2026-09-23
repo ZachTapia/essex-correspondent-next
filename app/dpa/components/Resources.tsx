@@ -6,6 +6,7 @@ import image4 from "../../../public/dpa/washingtonForgivable.svg"
 // import image4 from "../../../public/dpa/fillable.svg";
 import image5 from "../../../public/dpa/FAQ.svg";
 import image6 from "../../../public/dpa/options.svg";
+import { PdfCard } from "./CustomizePdf";
 
 const Resources = () => {
   return (
@@ -19,11 +20,7 @@ const Resources = () => {
       </section>
 
       <section className="grid h-full w-full grid-cols-1 p-2 bg-gray-200 justify-items-center text-black md:grid-cols-2 max-w-5xl mx-auto">
-        <div className="m-2 p-2 gap-4">
-          <a
-            href="/resources/EssexNHF_DPA_Term_Sheet_Amoritized_7.28.26.pdf"
-            target="_blank"
-          >
+        <PdfCard href="/resources/EssexNHF_DPA_Term_Sheet_Amoritized_7.28.26.pdf" title="Amortized: All States except NY & WA">
             <Image
               src={image1}
               width={800}
@@ -31,15 +28,9 @@ const Resources = () => {
               alt="Amortized All States except NY and WA document link"
               className="pt-4"
             />
-          </a>
-        </div>
+        </PdfCard>
 
-        <div className="m-2 p-2 gap-4">
-          <a
-            href="/dpa/WashingtonState10YearAmortized.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+        <PdfCard href="/dpa/WashingtonState10YearAmortized.pdf" title="Amortized: Washington State">
             <Image
               src={image2}
               width={800}
@@ -47,14 +38,9 @@ const Resources = () => {
               alt="Amortized Washington State document link"
               className="pt-4"
             />
-          </a>
-        </div>
+        </PdfCard>
 
-        <div className="m-2 p-2 gap-4">
-          <a
-            href="/resources/ESSEX_ NHF_TERM_SHEET_3_YEAR_FORGIVABLE_7.28.2026 .pdf"
-            target="_blank"
-          >
+        <PdfCard href="/resources/ESSEX_ NHF_TERM_SHEET_3_YEAR_FORGIVABLE_7.28.2026 .pdf" title="Forgivable: All States except NY & WA">
             <Image
               src={image3}
               width={800}
@@ -62,14 +48,9 @@ const Resources = () => {
               alt="Forgivable WA State document link"
               className="pt-4"
             />
-          </a>
-        </div>
+        </PdfCard>
 
-        <div className="m-2 p-2 gap-4">
-          <a
-            href="/dpa/ESSEX_WA_Only3_YEAR_FORGIVABLE_TERM_SHEET.pdf"
-            target="_blank"
-          >
+        <PdfCard href="/dpa/ESSEX_WA_Only3_YEAR_FORGIVABLE_TERM_SHEET.pdf" title="Forgivable: Washington State">
             <Image
               src={image4}
               width={800}
@@ -77,8 +58,7 @@ const Resources = () => {
               alt="Forgivable All States except NY & WA document link"
               className="pt-4"
             />
-          </a>
-        </div>
+        </PdfCard>
 
         {/* <div className="m-2 p-2 gap-4">
           <a
@@ -95,11 +75,7 @@ const Resources = () => {
           </a>
         </div> */}
 
-        <div className="m-2 p-2 gap-4">
-          <a
-            href="/dpa/DPA-FAQs.pdf"
-            target="_blank"
-          >
+        <PdfCard href="/dpa/DPA-FAQs.pdf" title="DPA FAQs">
             <Image
               src={image5}
               width={800}
@@ -107,14 +83,9 @@ const Resources = () => {
               alt="DPA FAQ document link"
               className="pt-4"
             />
-          </a>
-        </div>
+        </PdfCard>
 
-        <div className="m-2 p-2 gap-4">
-          <a
-            href="/resources/EssexDPA-Options.pdf"
-            target="_blank"
-          >
+        <PdfCard href="/resources/EssexDPA-Options.pdf" title="Nationwide Down Payment Options">
             <Image
               src={image6}
               width={800}
@@ -122,8 +93,7 @@ const Resources = () => {
               alt="Nationwide Down Payment Options document link"
               className="pt-4"
             />
-          </a>
-        </div>
+        </PdfCard>
 
         
       </section>

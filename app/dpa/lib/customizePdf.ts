@@ -1,8 +1,24 @@
-import { PDFDocument, PDFFont, PDFImage, PDFPage, StandardFonts, rgb } from "pdf-lib";
+import {
+  appendBezierCurve,
+  clip,
+  closePath,
+  endPath,
+  moveTo,
+  PDFDocument,
+  PDFFont,
+  PDFImage,
+  PDFPage,
+  PDFRef,
+  popGraphicsState,
+  pushGraphicsState,
+  rgb,
+  StandardFonts,
+} from "pdf-lib";
+import { Template, templates } from "./templates";
 
 export type Profile = {
   headshot: string; // JPEG data URL, already cropped to a circle on the band color
-  logo: string; // PNG data URL, logo on a white tile over the band color
+  logo: string; // PNG data URL, logo on a white rounded tile with transparent corners
   name: string;
   title: string;
   company: string;
@@ -13,6 +29,12 @@ export type Profile = {
 };
 
 export type PageScope = "all" | "first" | "last";
+
+export type SlotPhoto = "headshot" | "logo";
+
+export function hasPhotoSlot(src: string) {
+  return Boolean(templates[src]?.photo);
+}
 
 export const emptyProfile: Profile = {
   headshot: "",
@@ -46,32 +68,137 @@ function fetchOriginal(src: string) {
   return originals.get(src)!;
 }
 
+export type BuildOptions = {
+  scope: PageScope;
+  slotPhoto: SlotPhoto; // which image fills a template's photo circle
+};
+
+type Assets = { regular: PDFFont; bold: PDFFont; photo: PDFImage | null; logo: PDFImage | null };
+
 /**
  * Loads a PDF and adds a contact band below the existing content of the chosen pages.
  * Pages are extended downward, so nothing in the original document is covered.
+ * Fillable marketing templates also get their "Insert …" placeholders filled in.
  */
-export async function buildCustomizedPdf(src: string, profile: Profile, scope: PageScope) {
+export async function buildCustomizedPdf(src: string, profile: Profile, options: BuildOptions) {
   const doc = await PDFDocument.load(await fetchOriginal(src));
   const regular = await doc.embedFont(StandardFonts.Helvetica);
   const bold = await doc.embedFont(StandardFonts.HelveticaBold);
   const photo = profile.headshot ? await doc.embedJpg(profile.headshot) : null;
   const logo = profile.logo ? await doc.embedPng(profile.logo) : null;
+  const assets = { regular, bold, photo, logo };
 
   const pages = doc.getPages();
+  const template = templates[src];
+  if (template) {
+    fillTemplate(doc, pages[0], template, profile, assets, options.slotPhoto);
+    pruneDanglingAnnots(doc, pages[0]);
+  }
+
+  const { scope } = options;
   const targets =
     scope === "first" ? pages.slice(0, 1) : scope === "last" ? pages.slice(-1) : pages;
 
   for (const page of targets) {
-    drawBand(page, profile, { regular, bold, photo, logo });
+    drawBand(page, profile, assets);
   }
   return { bytes: await doc.save(), pageCount: pages.length };
 }
 
-function drawBand(
+function fillTemplate(
+  doc: PDFDocument,
   page: PDFPage,
+  template: Template,
   profile: Profile,
-  assets: { regular: PDFFont; bold: PDFFont; photo: PDFImage | null; logo: PDFImage | null },
+  assets: Assets,
+  slotPhoto: SlotPhoto,
 ) {
+  const crop = page.getCropBox();
+  const top = crop.y + crop.height;
+  const form = doc.getForm();
+  const removeField = (name: string) => {
+    const field = form.getFieldMaybe(name);
+    if (field) form.removeField(field);
+  };
+
+  for (const slot of template.text) {
+    const font = slot.bold ? assets.bold : assets.regular;
+    const text = sanitize(slot.value(profile), font).trim();
+    if (!text) continue; // leave the placeholder and its form field for the user to fill later
+
+    const baseline = top - slot.baseline;
+    const pad = slot.size * 0.15;
+    page.drawRectangle({
+      x: slot.x0 - pad,
+      y: baseline - slot.size * 0.28,
+      width: slot.x1 - slot.x0 + pad * 2,
+      height: slot.size * 1.08,
+      color: hex(slot.bg),
+    });
+
+    const natural = font.widthOfTextAtSize(text, slot.size);
+    const size = natural > slot.maxWidth ? (slot.size * slot.maxWidth) / natural : slot.size;
+    const width = font.widthOfTextAtSize(text, size);
+    const x = slot.align === "left" ? slot.anchor : slot.align === "right" ? slot.anchor - width : slot.anchor - width / 2;
+    page.drawText(text, { x, y: baseline, size, font, color: hex(slot.color) });
+    removeField(slot.field);
+  }
+
+  const slot = template.photo;
+  const preferred = slotPhoto === "logo" ? assets.logo : assets.photo;
+  const image = preferred ?? assets.photo ?? assets.logo;
+  if (!slot || !image) return;
+
+  const cx = crop.x + slot.cx;
+  const cy = top - slot.cy;
+  const r = slot.d / 2;
+  if (image === assets.photo) {
+    // Headshot already has a white ring; clip away its square corners
+    page.pushOperators(pushGraphicsState(), ...circlePath(cx, cy, r), clip(), endPath());
+    page.drawImage(image, { x: cx - r, y: cy - r, width: slot.d, height: slot.d });
+    page.pushOperators(popGraphicsState());
+  } else {
+    // Logo sits inside a white disc, scaled to fit the disc's inscribed square
+    page.drawCircle({ x: cx, y: cy, size: r, color: WHITE });
+    const box = slot.d * 0.68;
+    const scale = Math.min(box / image.width, box / image.height);
+    const w = image.width * scale;
+    const h = image.height * scale;
+    page.drawImage(image, { x: cx - w / 2, y: cy - h / 2, width: w, height: h });
+  }
+  removeField(slot.field);
+}
+
+// pdf-lib leaves removed widgets in a page's /Annots when that array is an indirect object,
+// which some viewers report as a broken file
+function pruneDanglingAnnots(doc: PDFDocument, page: PDFPage) {
+  const annots = page.node.Annots();
+  if (!annots) return;
+  for (let i = annots.size() - 1; i >= 0; i--) {
+    const ref = annots.get(i);
+    if (ref instanceof PDFRef && !doc.context.lookup(ref)) annots.remove(i);
+  }
+}
+
+// Four Bézier arcs approximating a circle
+function circlePath(cx: number, cy: number, r: number) {
+  const k = r * 0.5523;
+  return [
+    moveTo(cx + r, cy),
+    appendBezierCurve(cx + r, cy + k, cx + k, cy + r, cx, cy + r),
+    appendBezierCurve(cx - k, cy + r, cx - r, cy + k, cx - r, cy),
+    appendBezierCurve(cx - r, cy - k, cx - k, cy - r, cx, cy - r),
+    appendBezierCurve(cx + k, cy - r, cx + r, cy - k, cx + r, cy),
+    closePath(),
+  ];
+}
+
+function hex(value: string) {
+  const n = parseInt(value.slice(1), 16);
+  return rgb(((n >> 16) & 255) / 255, ((n >> 8) & 255) / 255, (n & 255) / 255);
+}
+
+function drawBand(page: PDFPage, profile: Profile, assets: Assets) {
   const crop = page.getCropBox();
   const media = page.getMediaBox();
   const h = Math.min(crop.width, crop.height) * 0.13;
@@ -223,8 +350,6 @@ export async function prepareLogo(file: File, maxW = 900, maxH = 360): Promise<s
   canvas.width = iw + inset * 2;
   canvas.height = ih + inset * 2;
   const ctx = canvas.getContext("2d")!;
-  ctx.fillStyle = BAND_HEX;
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
   ctx.fillStyle = "#ffffff";
   ctx.beginPath();
   ctx.roundRect(0, 0, canvas.width, canvas.height, inset);

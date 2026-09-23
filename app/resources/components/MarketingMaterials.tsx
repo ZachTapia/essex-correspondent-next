@@ -1,3 +1,18 @@
+import { CustomizeButton } from "../../dpa/components/CustomizePdf";
+
+const materials = [
+  [
+    { href: "/resources/resources_close_more_deals.pdf", label: "Close More Deals" },
+    { href: "/resources/resources_reach_more_borrowers.pdf", label: "Reach More Borrowers" },
+    { href: "/resources/resources_partner_with_us.pdf", label: "Partner With Us" },
+  ],
+  [
+    { href: "/resources/close-more-deals-esp-dpa.pdf", label: "Cierre Más Tratos" },
+    { href: "/resources/reach-more-borrowers-esp-dpa.pdf", label: "Llegue a Más Prestatarios" },
+    { href: "/resources/esp-partner-with-us-dpa.pdf", label: "Asóciese con Nosotros" },
+  ],
+];
+
 const MarketingMaterials = () => {
   return (
     <>
@@ -13,33 +28,22 @@ const MarketingMaterials = () => {
           Download our latest marketing materials and resources
         </h1>
 
-        <div className="grid grid-cols-3 gap-4 pt-6 text-center">
-          <a href="/resources/resources_close_more_deals.pdf" target="_blank" rel="noopener noreferrer" className="px-6 py-4 bg-blue-950 text-white hover:bg-gray-600 transition">
-            Close More Deals
-          </a>
-
-          <a href="/resources/resources_reach_more_borrowers.pdf" target="_blank" rel="noopener noreferrer" className="px-6 py-4 bg-blue-950 text-white hover:bg-gray-600 transition">
-            Reach More Borrowers
-          </a>
-
-          <a href="/resources/resources_partner_with_us.pdf" target="_blank" rel="noopener noreferrer" className="px-6 py-4 bg-blue-950 text-white hover:bg-gray-600 transition">
-            Partner With Us
-          </a>
-        </div>
-
-        <div className="grid grid-cols-3 gap-4 pt-4 text-center">
-          <a href="/resources/close-more-deals-esp-dpa.pdf" target="_blank" rel="noopener noreferrer" className="px-6 py-4 bg-blue-950 text-white hover:bg-gray-600 transition">
-            Cierre Más Tratos
-          </a>
-
-          <a href="/resources/reach-more-borrowers-esp-dpa.pdf" target="_blank" rel="noopener noreferrer" className="px-6 py-4 bg-blue-950 text-white hover:bg-gray-600 transition">
-            Llegue a Más Prestatarios
-          </a>
-
-          <a href="/resources/esp-partner-with-us-dpa.pdf" target="_blank" rel="noopener noreferrer" className="px-6 py-4 bg-blue-950 text-white hover:bg-gray-600 transition">
-            Asóciese con Nosotros
-          </a>
-        </div>
+        {materials.map((row, i) => (
+          <div key={i} className={`grid grid-cols-3 gap-4 text-center ${i === 0 ? "pt-6" : "pt-4"}`}>
+            {row.map((m) => (
+              <div key={m.href} className="flex flex-col gap-2">
+                <a href={m.href} target="_blank" rel="noopener noreferrer" className="px-6 py-4 bg-blue-950 text-white hover:bg-gray-600 transition">
+                  {m.label}
+                </a>
+                <CustomizeButton
+                  href={m.href}
+                  title={m.label}
+                  className="text-sm text-blue-950 underline hover:text-gray-600"
+                />
+              </div>
+            ))}
+          </div>
+        ))}
       </section>
     </>
   );

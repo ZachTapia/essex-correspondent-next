@@ -15,6 +15,13 @@ import {
 
 const STORAGE_KEY = "dpa-pdf-profile";
 
+// Image formats every major browser can decode for the headshot and logo uploads
+const UPLOAD_TYPES = [
+  { mime: "image/jpeg", label: "JPG" },
+  { mime: "image/png", label: "PNG" },
+  { mime: "image/webp", label: "WebP" },
+];
+
 // Saved only in this browser so users don't retype their info for each PDF
 function loadProfile(): Profile {
   try {
@@ -134,6 +141,10 @@ export function CustomizeDialog({ href, title, open, onClose }: Props) {
               onChange={(logo) => update({ ...profile, logo })}
               onError={setError}
             />
+            <p className="text-xs text-gray-500">
+              Supported file types: {UPLOAD_TYPES.map((t) => t.label).join(", ")}. Other formats, including
+              HEIC photos from iPhones, PDFs and SVGs, aren&apos;t supported. Save or convert them to JPG or PNG first.
+            </p>
 
             {fields.map((f) => (
               <label key={f.key} className="flex flex-col gap-1 text-sm">
@@ -275,7 +286,7 @@ function PhotoField({ label, value, round, prepare, onChange, onError }: PhotoFi
         <input
           ref={input}
           type="file"
-          accept="image/png,image/jpeg,image/webp"
+          accept={UPLOAD_TYPES.map((t) => t.mime).join(",")}
           className="hidden"
           onChange={(e) => onFile(e.target.files?.[0])}
         />

@@ -39,7 +39,7 @@ const ResourceDocs = () => {
           </div>
 
           <div className="m-2 p-2 gap-4 flex flex-col items-center">
-          <a href="/resources/EssexDPASalesDeck09-15-2026.pdf" target="_blank">
+          <a href="/resources/EssexDPASalesDeck10-01-2026.pdf" target="_blank">
             <Image
               src={image3}
               width={800}

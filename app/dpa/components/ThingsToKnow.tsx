@@ -15,7 +15,7 @@ const ThingsToKnow = () => {
 
           <div className="flex flex-wrap justify-center gap-4 pt-10">
           <a
-            href="/resources/EssexDPASalesDeck09-15-2026.pdf"
+            href="/resources/EssexDPASalesDeck10-01-2026.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-4 bg-blue-950 text-white hover:bg-gray-600 transition"

@@ -14,7 +14,7 @@ const Footer = () => {
               height={150}
               alt="Essex Correspondent Logo"
             ></Image>
-            <p className="text-white pt-4 text-sm">1417 N. Magnolia Ave.</p>
+            <p className="text-white pt-4 text-sm">1417 N. Magnolia Ave. Suite A</p>
             <p className="text-white pb-2 text-sm">Ocala, FL 34475</p>
           </div>
 

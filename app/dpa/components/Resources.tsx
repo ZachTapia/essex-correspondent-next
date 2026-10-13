@@ -20,7 +20,7 @@ const Resources = () => {
       </section>
 
       <section className="grid h-full w-full grid-cols-1 p-2 bg-gray-200 justify-items-center text-black md:grid-cols-2 max-w-5xl mx-auto">
-        <PdfCard href="/resources/EssexNHF_DPA_Term_Sheet_Amoritized_7.28.26.pdf" title="Amortized: All States except NY & WA">
+        <PdfCard href="/resources/NHF10YEARAMORTIZEDPROGRAM10.12.2026.pdf" title="Amortized: All States except NY & WA">
             <Image
               src={image1}
               width={800}
@@ -30,7 +30,7 @@ const Resources = () => {
             />
         </PdfCard>
 
-        <PdfCard href="/dpa/WashingtonState10YearAmortized.pdf" title="Amortized: Washington State">
+        <PdfCard href="/dpa/WashingtonState10YearAmortized10.12.2026.pdf" title="Amortized: Washington State">
             <Image
               src={image2}
               width={800}
@@ -40,7 +40,7 @@ const Resources = () => {
             />
         </PdfCard>
 
-        <PdfCard href="/resources/ESSEX_ NHF_TERM_SHEET_3_YEAR_FORGIVABLE_7.28.2026 .pdf" title="Forgivable: All States except NY & WA">
+        <PdfCard href="/resources/3YEARFORGIVABLE10.12.2026.pdf" title="Forgivable: All States except NY & WA">
             <Image
               src={image3}
               width={800}
@@ -50,7 +50,7 @@ const Resources = () => {
             />
         </PdfCard>
 
-        <PdfCard href="/dpa/ESSEX_WA_Only3_YEAR_FORGIVABLE_TERM_SHEET.pdf" title="Forgivable: Washington State">
+        <PdfCard href="/dpa/WA3YEARFORGIVABLE10.12.pdf" title="Forgivable: Washington State">
             <Image
               src={image4}
               width={800}

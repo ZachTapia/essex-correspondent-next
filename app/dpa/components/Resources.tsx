@@ -75,7 +75,7 @@ const Resources = () => {
           </a>
         </div> */}
 
-        <PdfCard href="/dpa/DPA-FAQs.pdf" title="DPA FAQs">
+        <PdfCard href="/dpa/DPA-FAQs-10-14-2026.pdf" title="DPA FAQs">
             <Image
               src={image5}
               width={800}

@@ -85,7 +85,7 @@ const Resources = () => {
             />
         </PdfCard>
 
-        <PdfCard href="/resources/EssexDPA-Options.pdf" title="Nationwide Down Payment Options">
+        <PdfCard href="/resources/EssexDPAOptions10-15-2026.pdf" title="Nationwide Down Payment Options">
             <Image
               src={image6}
               width={800}

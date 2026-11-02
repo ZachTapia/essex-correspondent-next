@@ -19,7 +19,7 @@ const Resources = () => {
         <hr className="w-40 h-1.5 mx-auto bg-gray-100 border-0 my-4 dark:bg-blue-950"></hr>
       </section>
 
-      <section className="grid h-full w-full grid-cols-1 p-2 bg-gray-200 justify-items-center text-black md:grid-cols-2 max-w-5xl mx-auto">
+      <section className="grid h-full w-full grid-cols-1 gap-6 p-2 bg-gray-200 justify-items-center text-black md:grid-cols-2 max-w-5xl mx-auto">
         <a href="/resources/NHF10YEARAMORTIZEDPROGRAM10.12.2026.pdf" title="Amortized: All States except NY & WA">
             <Image
               src={image1}

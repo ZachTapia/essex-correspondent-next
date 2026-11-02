@@ -6,7 +6,6 @@ import image4 from "../../../public/dpa/washingtonForgivable.svg"
 // import image4 from "../../../public/dpa/fillable.svg";
 import image5 from "../../../public/dpa/FAQ.svg";
 import image6 from "../../../public/dpa/options.svg";
-import { PdfCard } from "./CustomizePdf";
 
 const Resources = () => {
   return (

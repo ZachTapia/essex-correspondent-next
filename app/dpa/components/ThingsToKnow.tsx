@@ -1,4 +1,4 @@
-import { CustomizeButton } from "./CustomizePdf";
+
 
 
 const ThingsToKnow = () => {
@@ -22,11 +22,11 @@ const ThingsToKnow = () => {
           >
             Download Essex DPA Sales Deck
           </a>
-          <CustomizeButton
+          {/* <CustomizeButton
             href="/resources/EssexDPASalesDeck09-15-2026.pdf"
             title="Essex DPA Sales Deck"
             className="px-6 py-4 border border-blue-950 text-blue-950 hover:bg-gray-100 transition"
-          />
+          /> */}
           </div>
         </section>
     )

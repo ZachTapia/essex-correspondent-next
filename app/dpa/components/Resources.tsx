@@ -20,7 +20,7 @@ const Resources = () => {
       </section>
 
       <section className="grid h-full w-full grid-cols-1 p-2 bg-gray-200 justify-items-center text-black md:grid-cols-2 max-w-5xl mx-auto">
-        <PdfCard href="/resources/NHF10YEARAMORTIZEDPROGRAM10.12.2026.pdf" title="Amortized: All States except NY & WA">
+        <a href="/resources/NHF10YEARAMORTIZEDPROGRAM10.12.2026.pdf" title="Amortized: All States except NY & WA">
             <Image
               src={image1}
               width={800}
@@ -28,9 +28,9 @@ const Resources = () => {
               alt="Amortized All States except NY and WA document link"
               className="pt-4"
             />
-        </PdfCard>
+        </a>
 
-        <PdfCard href="/dpa/WashingtonState10YearAmortized10.12.2026.pdf" title="Amortized: Washington State">
+        <a href="/dpa/WashingtonState10YearAmortized10.12.2026.pdf" title="Amortized: Washington State">
             <Image
               src={image2}
               width={800}
@@ -38,9 +38,9 @@ const Resources = () => {
               alt="Amortized Washington State document link"
               className="pt-4"
             />
-        </PdfCard>
+        </a>
 
-        <PdfCard href="/resources/3YEARFORGIVABLE10.12.2026.pdf" title="Forgivable: All States except NY & WA">
+        <a href="/resources/3YEARFORGIVABLE10.12.2026.pdf" title="Forgivable: All States except NY & WA">
             <Image
               src={image3}
               width={800}
@@ -48,9 +48,9 @@ const Resources = () => {
               alt="Forgivable WA State document link"
               className="pt-4"
             />
-        </PdfCard>
+        </a>
 
-        <PdfCard href="/dpa/WA3YEARFORGIVABLE10.12.pdf" title="Forgivable: Washington State">
+        <a href="/dpa/WA3YEARFORGIVABLE10.12.pdf" title="Forgivable: Washington State">
             <Image
               src={image4}
               width={800}
@@ -58,7 +58,7 @@ const Resources = () => {
               alt="Forgivable All States except NY & WA document link"
               className="pt-4"
             />
-        </PdfCard>
+        </a>
 
         {/* <div className="m-2 p-2 gap-4">
           <a
@@ -75,7 +75,7 @@ const Resources = () => {
           </a>
         </div> */}
 
-        <PdfCard href="/dpa/DPA-FAQs-10-14-2026.pdf" title="DPA FAQs">
+        <a href="/dpa/DPA-FAQs-10-14-2026.pdf" title="DPA FAQs">
             <Image
               src={image5}
               width={800}
@@ -83,9 +83,9 @@ const Resources = () => {
               alt="DPA FAQ document link"
               className="pt-4"
             />
-        </PdfCard>
+        </a>
 
-        <PdfCard href="/resources/EssexDPAOptions10-15-2026.pdf" title="Nationwide Down Payment Options">
+        <a href="/resources/EssexDPAOptions10-15-2026.pdf" title="Nationwide Down Payment Options">
             <Image
               src={image6}
               width={800}
@@ -93,7 +93,7 @@ const Resources = () => {
               alt="Nationwide Down Payment Options document link"
               className="pt-4"
             />
-        </PdfCard>
+        </a>
 
         
       </section>
